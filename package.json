@@ -15,8 +15,6 @@
     "react-scripts": "^1.0.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts-with-sass start",
     "build": "react-scripts-with-sass build",
     "test": "react-scripts test --env=jsdom",
