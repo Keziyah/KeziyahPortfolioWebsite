@@ -10,7 +10,7 @@ const About = (props) => {
 
                         <div className="about__p">
                             <p>I’m Keziyah, a teacher, traveler, and full stack software engineer based in NYC, specializing in the NERDS (Node.js, Express, React (w/ Redux), Databases using SQL) stack, but always curious to learn more. Currently working on side
-                            projects and looking for a full time remote engineering position. I'm also accepting clients for freelance work. Feel free to say hi. 
+                            projects and looking for a full time engineering gig in New York, DC, or remote.  Feel free to say hi.
                             </p>
                         </div>
                         <div className="about__contact">

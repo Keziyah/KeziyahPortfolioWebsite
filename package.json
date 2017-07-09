@@ -2,9 +2,7 @@
   "name": "portfolio1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://keziyah.github.io/my-app",
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
