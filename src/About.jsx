@@ -4,13 +4,13 @@ const About = (props) => {
     return (
         <div className="section about">
             <div className="about__main">
-                        <div className="about__img">
+                        {/*<div className="about__img">
                             <img src="myFace.jpg" alt="Keziyah's headshot"/>
-                        </div>
+                        </div>*/}
 
                         <div className="about__p">
                             <p>I’m Keziyah, a teacher, traveler, and full stack software engineer based in NYC, specializing in the NERDS (Node.js, Express, React (w/ Redux), Databases using SQL) stack, but always curious to learn more. Currently working on side
-                            projects and looking for a full time engineering gig in New York, DC, or remote.  Feel free to say hi.
+                            projects and looking for a full time <strong>remote</strong> engineering position. I'm also accepting freelance clients. Feel free to say hi.
                             </p>
                         </div>
                         <div className="about__contact">
