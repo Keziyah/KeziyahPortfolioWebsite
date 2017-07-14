@@ -1,15 +1,15 @@
 
-# Node build artifacts
+# dependencies
 node_modules
-npm-debug.log
-react-ui/node_modules
-react-ui/*.css
 
-# Local development
-*.env
-*.dev
+# testing
+coverage
+
+# production
+build
+
+# misc
 .DS_Store
-
-# Docker
-Dockerfile
-docker-compose.yml
+.env
+npm-debug.log
+*.css
