@@ -1,22 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+$main-off-white:  #faebd7; 
 
 button {
-    border: none; 
-    width: 14em; 
-    height: 3em; 
-    border-radius: 40px/30px; 
-    font-size: 12px;
-    color: #333;  
-    padding: 10px; 
-    text-transform: uppercase; 
+    border: 3px solid $main-off-white; 
+    width: 6em; 
+    height: 2em; 
+    font-size: 2rem;
+    color: $main-off-white;  
+    padding: 3px; 
     cursor: pointer; 
-    background: #efedec; 
+    background: rgba(0, 0, 0, 0); 
     margin-top: 5%; 
 
     &:hover {
-        background: #ddd; 
+        color: rgba(243, 89, 49, 0.8); 
+        border: 3px solid rgba(243, 89, 49, 0.8);
     }
 
     &:focus {

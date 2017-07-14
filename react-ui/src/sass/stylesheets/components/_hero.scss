@@ -10,38 +10,59 @@
   justify-content: center;
 }
 
+$main-off-white:  #faebd7; 
+$highlight-on-black: rgba(243, 89, 49, 0.8); 
+$highlight-on-white: rgba(242, 127, 40, 0.6); 
+
 .hero {
-    background-image: url('EssaouiraMedina.JPG'); 
+    background-image: url('hero.png'); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 
-.hero__text {
-    padding-top: 10%; 
-     &--name {
-        font-size: 4rem; 
-        text-transform: uppercase; 
-        @extend %flex-row-center; 
-    }
+.hero__burger {
+    position: fixed; 
+    top: 50px; 
+    right: 30px; 
+    cursor: pointer;  
+}
 
-    &--tagline  {
-        @extend %flex-row-center;
+.highlight-black {
+    background: $highlight-on-black; 
+}
 
-        @media screen and (min-width: 850px) {
-            h1 {
-            background: rgba(255, 255, 255, 0.7);
+.hero__greeting {
+    padding-top: 7%; 
+    padding-left: 10%;
+    width: 80%;  
+    color: $main-off-white; 
+        h1 {
+            font-size: 6rem; 
+        }  
+        h3 {
+            font-size: 3.5rem; 
+            padding-top: 5%; 
         }
-    }   
-    }
+
+    // &--tagline  {
+    //     @extend %flex-row-center;
+
+    //     @media screen and (min-width: 850px) {
+    //         h1 {
+    //         background: rgba(255, 255, 255, 0.7);
+    //     }
+    // }   
+    // }
 }
 
-.down {
-    text-align: center; 
-    position: relative; 
-    bottom: -30%; 
-    color: #ddd; 
-}
+
+// .hero__buttons {
+//     &--contact {
+        
+//     }
+// }
+
 
 @media screen and (max-width: 700px) {
     .hero__text {

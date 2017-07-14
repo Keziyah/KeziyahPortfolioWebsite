@@ -1,4 +1,4 @@
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -503,7 +503,7 @@ body {
   position: absolute;
   width: 1px; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -527,24 +527,26 @@ html, body {
   height: 100vh;
   width: 100vw; }
 
+.page-content {
+  animation: fade 0.5s ease-in-out; }
+
 button {
-  border: none;
-  width: 14em;
-  height: 3em;
-  border-radius: 40px/30px;
-  font-size: 12px;
-  color: #333;
-  padding: 10px;
-  text-transform: uppercase;
+  border: 3px solid #faebd7;
+  width: 6em;
+  height: 2em;
+  font-size: 2rem;
+  color: #faebd7;
+  padding: 3px;
   cursor: pointer;
-  background: #efedec;
+  background: transparent;
   margin-top: 5%; }
   button:hover {
-    background: #ddd; }
+    color: rgba(243, 89, 49, 0.8);
+    border: 3px solid rgba(243, 89, 49, 0.8); }
   button:focus {
     outline: none; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -555,25 +557,30 @@ button {
   justify-content: center; }
 
 .hero {
-  background-image: url("EssaouiraMedina.JPG");
+  background-image: url("hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.hero__text {
-  padding-top: 10%; }
-  .hero__text--name {
-    font-size: 4rem;
-    text-transform: uppercase; }
-  @media screen and (min-width: 850px) {
-    .hero__text--tagline h1 {
-      background: rgba(255, 255, 255, 0.7); } }
+.hero__burger {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  cursor: pointer; }
 
-.down {
-  text-align: center;
-  position: relative;
-  bottom: -30%;
-  color: #ddd; }
+.highlight-black {
+  background: rgba(243, 89, 49, 0.8); }
+
+.hero__greeting {
+  padding-top: 7%;
+  padding-left: 10%;
+  width: 80%;
+  color: #faebd7; }
+  .hero__greeting h1 {
+    font-size: 6rem; }
+  .hero__greeting h3 {
+    font-size: 3.5rem;
+    padding-top: 5%; }
 
 @media screen and (max-width: 700px) {
   .hero__text--name {
@@ -585,7 +592,7 @@ button {
   .hero__text--tagline {
     font-size: 1rem; } }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -638,7 +645,7 @@ button {
   background-color: #1d9de0;
   color: #efedec; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -703,7 +710,7 @@ button {
           font-size: 1rem;
           padding: auto; } }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -748,3 +755,66 @@ button {
         height: 200px;
         overflow-y: scroll;
         margin-top: 5%; } }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .header img {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 34.82px;
+    opacity: 0.4; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fade 0.5s ease-in-out; }
+
+.menu-div {
+  padding-top: 8%;
+  padding-left: 43%;
+  background: rgba(243, 89, 49, 0.8); }
+  .menu-div h1 {
+    font-size: 4em; }
+
+.scroll-downs {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin: auto;
+  width: 34px;
+  height: 55px; }
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75; }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 10%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite; }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(15px);
+    opacity: 0; } }
