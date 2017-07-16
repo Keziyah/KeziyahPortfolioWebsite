@@ -1,9 +1,9 @@
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -542,12 +542,12 @@ body {
   100% {
     transform: translateY(-100%); } }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -570,11 +570,11 @@ html, body {
   animation: fade 0.5s ease-in-out; }
 
 button {
-  border: 3px solid #faebd7;
+  border: 3px solid #eee5f1;
   width: 6em;
   height: 2em;
-  font-size: 2rem;
-  color: #faebd7;
+  font-size: 3rem;
+  color: #eee5f1;
   padding: 3px;
   cursor: pointer;
   background: transparent;
@@ -589,12 +589,12 @@ button {
   color: #333;
   border-color: #333; }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -618,19 +618,21 @@ button {
   padding-top: 7%;
   padding-left: 10%;
   width: 80%;
-  color: #faebd7; }
+  color: #eee5f1; }
   .hero__greeting h1 {
     font-size: 6rem; }
   .hero__greeting h3 {
     font-size: 3.5rem;
     padding-top: 5%; }
+  .hero__greeting button:nth-child(2) {
+    margin-left: 20px; }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -678,39 +680,36 @@ button {
   background-color: #1d9de0;
   color: #efedec; }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .about {
   text-align: center;
-  background-image: url("dubai_zipline.jpg");
+  height: 100vh;
+  background-image: url("dubai_zipline.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .about__main {
-    padding-top: 7%;
-    max-width: 80%; }
+    padding-top: 10%;
+    max-width: 100%;
+    height: 95vh; }
     @media screen and (max-width: 700px) {
       .about__main {
         padding-top: 20%; } }
-  .about img {
-    width: 175px;
-    border-radius: 50%;
-    display: none; }
-    @media screen and (max-width: 530px) {
-      .about img {
-        width: 150px; } }
   .about__p {
     padding-top: 3%; }
     .about__p p {
-      background: rgba(255, 255, 255, 0.5); }
+      color: #eee5f1;
+      line-height: 5rem;
+      width: 80%; }
     @media screen and (max-width: 530px) {
       .about__p {
         font-size: 1.4rem; } }
@@ -720,35 +719,29 @@ button {
     @media screen and (min-width: 1600px) {
       .about__p {
         font-size: 3rem; } }
-  .about__contact {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 6%; }
-    .about__contact-icon {
-      padding-left: 5%;
-      font-size: 1.5rem; }
-      .about__contact-icon a {
-        color: rgba(239, 237, 236, 0.9);
-        text-decoration: none; }
-        .about__contact-icon a:hover {
-          color: #a5a09e; }
-        .about__contact-icon a p {
-          background: rgba(0, 0, 0, 0.5); }
-      @media screen and (max-width: 530px) {
-        .about__contact-icon {
-          font-size: 1.2rem;
-          padding-left: 3%; } }
-      @media screen and (max-width: 375px) {
-        .about__contact-icon {
-          font-size: 1rem;
-          padding: auto; } }
+  .about #fly {
+    width: 200px; }
+  .about__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .about__buttons button:nth-child(2) {
+      margin-left: 20px; }
+  .about footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    height: 5vh;
+    background: rgba(20, 20, 20, 0.5);
+    color: white; }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -839,12 +832,12 @@ button {
     transform: translateY(15px);
     opacity: 0; } }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -889,15 +882,18 @@ button {
 .quote-name {
   padding-top: -10%; }
 
-.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+.details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .projects, .hireme {
+.project__main, .about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.hireme__bottom {
+  background: #f9f9f9; }
 
 .hireme__available h1 {
   font-size: 14rem;
@@ -919,4 +915,5 @@ button {
     padding-right: 0; }
 
 .hireme__button {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 10rem; }

@@ -14,7 +14,7 @@ const Header = (props) => {
                     height={30}
                     strokeWidth={3}
                     rotate={0}
-                    color='#faebd7'
+                    color='#eee5f1'
                     borderRadius={0}
                     animationDuration={0.5}
                 />

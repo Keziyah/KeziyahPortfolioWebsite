@@ -4,6 +4,7 @@ import Header from './Header'
 import Hero from './Hero'
 import Projects from './Projects'
 import HireMe from './HireMe'
+import About from './About'
 import './sass/stylesheets/main.css'
 
 
@@ -58,6 +59,7 @@ class App extends Component {
                     <Hero />
                     <Projects />
                     <HireMe />
+                    <About />
                 </div>
             </div>
         )

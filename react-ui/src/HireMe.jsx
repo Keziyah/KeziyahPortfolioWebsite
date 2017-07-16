@@ -17,7 +17,7 @@ const HireMe = (props) => {
             <div className="quote-name">
                 <h3>- Oprah Winfrey</h3>
             </div>
-
+        
             <div className="hireme__available">
                 <h1>I'm <span className="highlight-white">available</span></h1>
             </div>
@@ -51,11 +51,11 @@ const HireMe = (props) => {
                                     <i className="fa fa-envelope fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
-            </div>
+                        </div>
                             <div className="hireme__button">
                                 <button className="button-black">Say hello.</button>
                             </div>
-        </div>
+                    </div>
     )
 } 
 

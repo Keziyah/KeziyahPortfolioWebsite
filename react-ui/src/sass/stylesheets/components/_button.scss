@@ -1,13 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-$main-off-white:  #faebd7; 
+$main-off-white:  #eee5f1; 
 
 button {
     border: 3px solid $main-off-white; 
     width: 6em; 
     height: 2em; 
-    font-size: 2rem;
+    font-size: 3rem;
     color: $main-off-white;  
     padding: 3px; 
     cursor: pointer; 
@@ -27,5 +27,6 @@ button {
 
 .button-black {
      color: #333; 
-     border-color: #333; 
+     border-color: #333;
 }
+
