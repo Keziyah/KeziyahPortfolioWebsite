@@ -3,7 +3,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 
 const Header = (props) => {
     return (
-        <div className="header">
+        <div className={props.headerClass + " header"}>
             <img src="mylogo.png" alt="my logo"/>
 
              <div className="hero__burger">

@@ -23,7 +23,7 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
 
 .hero__burger {
     position: fixed; 
-    top: 50px; 
+    top: 20px; 
     right: 30px; 
     cursor: pointer;  
 }
@@ -64,22 +64,22 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
 // }
 
 
-@media screen and (max-width: 700px) {
-    .hero__text {
-        &--name {
-            font-size: 3rem; 
-        }
-    }
-}
+// @media screen and (max-width: 700px) {
+//     .hero__text {
+//         &--name {
+//             font-size: 3rem; 
+//         }
+//     }
+// }
 
-@media screen and (max-width: 530px) {
-    .hero__text {
-        &--name {
-            font-size: 2rem; 
-        }
+// @media screen and (max-width: 530px) {
+//     .hero__text {
+//         &--name {
+//             font-size: 2rem; 
+//         }
 
-        &--tagline  {
-            font-size: 1rem; 
-        }
-    }   
-}
+//         &--tagline  {
+//             font-size: 1rem; 
+//         }
+//     }   
+// }

@@ -1,9 +1,9 @@
-.about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -441,6 +441,12 @@ html {
 * {
   font-family: 'Montserrat', sans-serif; }
 
+a {
+  color: #333;
+  text-decoration: none; }
+  a:hover {
+    color: #a5a09e; }
+
 /**
  * Basic typography style for copy text
  */
@@ -503,12 +509,45 @@ body {
   position: absolute;
   width: 1px; }
 
-.about, .about__contact, .details__project, .details__main, .details__back {
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px; }
+  .header img {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 150px;
+    height: 34.82px;
+    opacity: 0.4; }
+  .header--background {
+    background: #000;
+    z-index: 1;
+    animation: header-appear 0.4s ease-out 0s 1; }
+  .header--invisible {
+    display: none; }
+
+@keyframes header-appear {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes header-leave {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-100%); } }
+
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -523,7 +562,7 @@ html, body {
   align-items: center;
   margin: auto; }
 
-.section, .project, .hero, .details {
+.hero, .menu-div {
   height: 100vh;
   width: 100vw; }
 
@@ -546,12 +585,16 @@ button {
   button:focus {
     outline: none; }
 
-.about, .about__contact, .details__project, .details__main, .details__back {
+.button-black {
+  color: #333;
+  border-color: #333; }
+
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -564,7 +607,7 @@ button {
 
 .hero__burger {
   position: fixed;
-  top: 50px;
+  top: 20px;
   right: 30px;
   cursor: pointer; }
 
@@ -582,22 +625,12 @@ button {
     font-size: 3.5rem;
     padding-top: 5%; }
 
-@media screen and (max-width: 700px) {
-  .hero__text--name {
-    font-size: 3rem; } }
-
-@media screen and (max-width: 530px) {
-  .hero__text--name {
-    font-size: 2rem; }
-  .hero__text--tagline {
-    font-size: 1rem; } }
-
-.about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -645,12 +678,12 @@ button {
   background-color: #1d9de0;
   color: #efedec; }
 
-.about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -710,12 +743,12 @@ button {
           font-size: 1rem;
           padding: auto; } }
 
-.about, .about__contact, .details__project, .details__main, .details__back {
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.project__main, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -756,20 +789,6 @@ button {
         overflow-y: scroll;
         margin-top: 5%; } }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  width: 100%; }
-  .header img {
-    position: relative;
-    top: 50px;
-    left: 50px;
-    width: 150px;
-    height: 34.82px;
-    opacity: 0.4; }
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -788,6 +807,7 @@ button {
   bottom: 50px;
   left: 50%;
   margin: auto;
+  z-index: 0;
   width: 34px;
   height: 55px; }
 
@@ -818,3 +838,85 @@ button {
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.project__main, .projects, .hireme {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.projects__links {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+
+.projects .project-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.projects .spacechat-logo {
+  height: 60vh;
+  width: 50%;
+  background-color: #1b2735; }
+
+.projects .lingoly-logo {
+  height: 60vh;
+  width: 50%;
+  background-color: #22874f; }
+
+.section-title {
+  align-self: flex-start;
+  padding-left: 7%;
+  width: 40%; }
+  .section-title h3 {
+    font-size: 2rem; }
+
+.quote {
+  width: 65%; }
+  .quote h1 {
+    border-left: 10px solid #979797;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 7rem;
+    margin-bottom: 0; }
+
+.quote-name {
+  padding-top: -10%; }
+
+.about, .about__contact, .details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.project__main, .projects, .hireme {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hireme__available h1 {
+  font-size: 14rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+  .hireme__available h1 .highlight-white {
+    background: rgba(242, 127, 40, 0.6); }
+
+.hireme__job h3 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem; }
+
+.hireme__links {
+  padding-top: 3rem; }
+  .hireme__links-icon {
+    padding-right: 10rem; }
+  .hireme__links-icon:last-child {
+    padding-right: 0; }
+
+.hireme__button {
+  padding-top: 4rem; }

@@ -1,3 +1,45 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+    //   flex: 0 0 auto;
+    //   padding-top: 70px;
+    display: flex; 
+    flex-direction: row;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    height: 70px;
+
+    img {
+        position: relative; 
+        top: 20px; 
+        left: 50px; 
+        width: 150px; 
+        height: 34.82px; 
+        opacity: 0.4; 
+    }
+
+    &--background {
+        background: #000; 
+        z-index: 1; 
+        animation: header-appear 0.4s ease-out 0s 1;
+    }
+
+    &--invisible {
+        display: none; 
+    }
+}
+
+@keyframes header-appear {
+     0% {transform: translateY(-100%);};
+    100% {transform: translateY(0);};
+}
+
+@keyframes header-leave {
+    0% {transform: translateY(0);};
+    100% {transform: translateY(-100%);};
+}
+
+// .page-content {
+//     // flex: 1 1 auto;
+//     // position: relative;/* need this to position inner content */
+//     // overflow-y: auto;
+// }

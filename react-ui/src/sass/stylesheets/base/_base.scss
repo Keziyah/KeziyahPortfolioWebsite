@@ -35,3 +35,13 @@ html {
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+ a {
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    color: #a5a09e; 
+  }
+  
+ }
