@@ -24,18 +24,28 @@
         flex-direction: column; 
         justify-content: center; 
         align-items: center; 
+        height: 60vh; 
+        width: 25vw; 
     }
 
     .spacechat-logo {
-        height: 60vh; 
-        width: 50%; 
         background-color: #1b2735; 
+        img {
+            height: 42px; 
+            width: 251px; 
+        }
     }
 
-    .lingoly-logo {
-        height: 60vh; 
-        width: 50%; 
+    .lingoly-logo { 
         background-color: #22874f; 
+    }
+
+    .covfefe-logo {
+        background-color: #D46A01; 
+    }
+
+    .life-logo {
+        background-color: #467988; 
     }
 }
 

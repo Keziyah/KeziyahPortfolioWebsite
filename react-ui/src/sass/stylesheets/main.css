@@ -852,17 +852,24 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 60vh;
+  width: 25vw; }
 
 .projects .spacechat-logo {
-  height: 60vh;
-  width: 50%;
   background-color: #1b2735; }
+  .projects .spacechat-logo img {
+    height: 42px;
+    width: 251px; }
 
 .projects .lingoly-logo {
-  height: 60vh;
-  width: 50%;
   background-color: #22874f; }
+
+.projects .covfefe-logo {
+  background-color: #D46A01; }
+
+.projects .life-logo {
+  background-color: #467988; }
 
 .section-title {
   align-self: flex-start;

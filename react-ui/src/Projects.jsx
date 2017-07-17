@@ -27,6 +27,15 @@ const Projects = () => {
             <div className="lingoly-logo project-logo">
                 <div><img src="lingolylogo.png" alt="lingoly logo" /></div>
             </div>
+
+            <div className="covfefe-logo project-logo">
+                <div><img src="covfefe.png" alt="covfefe letter logo" /></div>
+            </div>
+
+            <div className="life-logo project-logo">
+                <div><img src="life.png" alt="life solutions counseling logo" /></div>
+            </div>
+
           </div>  
 
         </div>
