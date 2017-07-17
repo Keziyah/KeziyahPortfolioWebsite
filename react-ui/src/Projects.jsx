@@ -21,11 +21,11 @@ const Projects = () => {
 
           <div className="projects__links">  
             <div className="spacechat-logo project-logo">
-                <div><img src="spacechatlogo.png"/></div>
+                <div><img src="spacechatlogo.png" alt="spacechat logo"/></div>
             </div>
 
             <div className="lingoly-logo project-logo">
-                <div><img src="lingolylogo.png" /></div>
+                <div><img src="lingolylogo.png" alt="lingoly logo" /></div>
             </div>
           </div>  
 

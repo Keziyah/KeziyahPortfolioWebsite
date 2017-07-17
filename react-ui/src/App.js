@@ -5,6 +5,7 @@ import Hero from './Hero'
 import Projects from './Projects'
 import HireMe from './HireMe'
 import About from './About'
+import Video from './Video'
 import './sass/stylesheets/main.css'
 
 
@@ -15,11 +16,13 @@ class App extends Component {
         this.state = {
             open: false, 
             scrollY: 0, 
-            headerClass: "" 
+            headerClass: "", 
+            showVid: false 
         }
 
         this.handleBurgerClick = this.handleBurgerClick.bind(this); 
         this.runOnScroll = this.runOnScroll.bind(this)
+        this.toggleVid = this.toggleVid.bind(this)
     }
 
     runOnScroll(e) {
@@ -47,6 +50,10 @@ class App extends Component {
         console.log("state", this.state)
     }
 
+    toggleVid() {
+        this.setState({showVid: !this.state.showVid})
+    }
+
     render() {
         return (
             <div className="container" onScroll={console.log(window.scrollY)}>
@@ -59,7 +66,9 @@ class App extends Component {
                     <Hero />
                     <Projects />
                     <HireMe />
-                    <About />
+                    {
+                        this.state.showVid ? <Video toggleVid={this.toggleVid}/> : <About toggleVid={this.toggleVid}/>
+                    }
                 </div>
             </div>
         )

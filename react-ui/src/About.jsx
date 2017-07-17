@@ -12,7 +12,7 @@ const About = (props) => {
 
                         <div className="about__buttons">
                             <button>Contact</button>
-                            <button id="fly">Watch me fly</button>
+                            <button id="fly" onClick={props.toggleVid}>Watch me fly</button>
                         </div>
             </div>
 
