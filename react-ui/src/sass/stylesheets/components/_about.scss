@@ -1,14 +1,4 @@
-%flex-row-center {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-}
-
-%flex-col-center {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center;
-}
+@import '../abstracts/variables'; 
 
 .about {
     text-align: center; 
@@ -33,7 +23,7 @@
         @extend %flex-col-center; 
 
         p {
-            color: #eee5f1; 
+            color: $main-off-white; 
             line-height: 3rem;
             width: 90%;
         }
@@ -56,6 +46,14 @@
 
     #fly {
         width: 200px; 
+        padding-left: 9px; 
+        padding-bottom: 8px; 
+
+        i {
+            font-size: 1.7rem; 
+            position: relative; 
+            top: 5px; 
+        }
     }
 
     &__buttons {
@@ -67,8 +65,12 @@
         }
         
         a {
-            color: #eee5f1; 
-            width: 200px;  
+            color: $main-off-white; 
+            width: 200px;
+            
+            &:hover {
+                color: $main-accent; 
+            }
         }
     }
 
@@ -79,7 +81,7 @@
         padding: 0.5rem;
         height: 5vh; 
         background: rgba(20, 20, 20, 0.5); 
-        color: white; 
+        color: $main-off-white; 
         font-size: 1rem; 
     }
 

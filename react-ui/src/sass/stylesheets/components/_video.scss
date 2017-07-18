@@ -1,17 +1,5 @@
-// .video {
-//     height: 100vh;
-//     width: 100%; 
-//     background: #333; 
-// }
+//CSS page transitions: https://github.com/codrops/PageTransitions/blob/master/css/animations.css
 
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
 .video-container {
     position: relative;
     bottom: 0%;
@@ -20,12 +8,18 @@
     width: 100vw;
     overflow: hidden;
     background: #000;
+    // animation: moveToLeft .7s ease-in-out both;
 }
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
+
+@keyframes moveToRight {
+	from {transform: translateX(-100%) }
+	to { -webkit-transform: translateX(0%); transform: translateX(0%); }
 }
+// .video-container .poster img {
+//     width: 100%;
+//     bottom: 0;
+//     position: absolute;
+// }
 .video-container .filter {
     z-index: 100;
     position: absolute;
@@ -36,17 +30,20 @@
     position: absolute;
     z-index: 0;
     bottom: 0;
+    
 }
 .video-container video.fillWidth {
     width: 100%;
+    animation: moveToRight .7s ease-in-out both;
 }
 
-/*OTHER HOMEPAGE STYLES*/
-/*Transparent color over the video*/
+/*Transparent div over the video, shows the "go back" button */
 #overlay {
     position: absolute;
-    top: 0; 
-    right: 0; 
-    left: 0; 
-    bottom: 0; 
+    // right: 0; 
+    // left: 0; 
+    // bottom: 0;
+    top: 85%; 
+    height: 50px; 
+    width: 150px; 
 }

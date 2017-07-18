@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Scroll from 'react-scroll'
-import Menu from './Menu'
 import Header from './Header'
 import Hero from './Hero'
 import Projects from './Projects'
@@ -84,19 +83,22 @@ class App extends Component {
             <div className="container" onScroll={console.log(window.scrollY)}>
                 <Header open={this.state.open} handleClick={this.handleBurgerClick} headerClass={this.state.headerClass}/>
                 
-                <div className="menu" style={{display: this.state.open ? "" : "none"}}>
+                {/* <div className="menu" style={{display: this.state.open ? "" : "none"}}>
                     <Menu open={this.state.open}/>
-                </div>
+                </div> */}
 
-                <div className="page-content" style={{display: !this.state.open ? "" : "none"}}>
-                    <Hero workClick={this.scrollToProjects} contactClick={this.scrollToContact}/>
+                <div className="page-content">
+                    
+                    <Element name="home">
+                        <Hero workClick={this.scrollToProjects} contactClick={this.scrollToContact}/>
+                    </Element>
 
                     <Element name="projects">
                         <Projects />
                     </Element>
 
                     <HireMe />
-
+                    
                     {
                         this.state.showVid ? <Video toggleVid={this.toggleVid}/> : <About toggleVid={this.toggleVid}/>
                     }

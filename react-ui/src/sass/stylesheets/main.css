@@ -412,6 +412,16 @@ template {
 [hidden] {
   display: none; }
 
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -440,12 +450,13 @@ html {
 
 a {
   color: #333;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all .2s ease-in; }
   a:hover {
-    color: #a5a09e; }
+    color: #cb4f2f; }
 
 * {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 /**
  * Basic typography style for copy text
@@ -509,6 +520,16 @@ body {
   position: absolute;
   width: 1px; }
 
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -517,6 +538,34 @@ body {
   width: 100%;
   height: 70px;
   z-index: 6; }
+  .header .open {
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    opacity: 1; }
+  .header .closed {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    opacity: 0;
+    transform: opacity; }
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5%;
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    left: 32em; }
+    .header nav h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #eee5f1;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color .3s ease-in; }
+      .header nav h3:hover {
+        color: #cb4f2f; }
   .header img {
     position: relative;
     top: 20px;
@@ -563,6 +612,16 @@ html, body {
 .page-content {
   animation: fade 0.5s ease-in-out; }
 
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 button {
   border: 3px solid #eee5f1;
   width: 6em;
@@ -572,10 +631,11 @@ button {
   padding: 3px;
   cursor: pointer;
   background: transparent;
-  margin-top: 5%; }
+  margin-top: 5%;
+  transition: all .3s ease-in; }
   button:hover {
-    color: rgba(243, 89, 49, 0.8);
-    border: 3px solid rgba(243, 89, 49, 0.8); }
+    color: #cb4f2f;
+    border: 3px solid #cb4f2f; }
   button:focus {
     outline: none; }
 
@@ -593,12 +653,21 @@ button {
   flex-direction: column;
   justify-content: center; }
 
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .hero {
   background-image: url("hero.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: blue; }
+  background-size: cover; }
 
 .hero__burger {
   position: fixed;
@@ -606,8 +675,8 @@ button {
   right: 30px;
   cursor: pointer; }
 
-.highlight-black {
-  background: rgba(243, 89, 49, 0.8); }
+.highlight {
+  background: #cb4f2f; }
 
 .hero__greeting {
   padding-top: 7%;
@@ -619,6 +688,8 @@ button {
   .hero__greeting h3 {
     font-size: 2rem;
     padding-top: 5%; }
+  .hero__greeting a, .hero__greeting button {
+    font-family: 'Open Sans', sans-serif; }
   .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
@@ -663,7 +734,13 @@ button {
         font-size: 3rem;
         line-height: 6rem; } }
   .about #fly {
-    width: 200px; }
+    width: 200px;
+    padding-left: 9px;
+    padding-bottom: 8px; }
+    .about #fly i {
+      font-size: 1.7rem;
+      position: relative;
+      top: 5px; }
   .about__buttons {
     display: flex;
     flex-direction: row;
@@ -673,6 +750,8 @@ button {
     .about__buttons a {
       color: #eee5f1;
       width: 200px; }
+      .about__buttons a:hover {
+        color: #cb4f2f; }
   .about footer {
     right: 0;
     bottom: 0;
@@ -680,7 +759,7 @@ button {
     padding: 0.5rem;
     height: 5vh;
     background: rgba(20, 20, 20, 0.5);
-    color: white;
+    color: #eee5f1;
     font-size: 1rem; }
 
 .details__project, .details__main, .details__back, .hireme__links {
@@ -729,19 +808,15 @@ button {
         overflow-y: scroll;
         margin-top: 5%; } }
 
-.menu {
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  animation: fade 0.5s ease-in-out;
-  z-index: 5; }
-
-.menu-div {
-  padding-top: 8%;
-  padding-left: 43%;
-  background: rgba(243, 89, 49, 0.8); }
-  .menu-div h1 {
-    font-size: 4rem; }
+  justify-content: center; }
 
 .scroll-downs {
   position: absolute;
@@ -788,6 +863,16 @@ button {
 .about__p, .projects, .hireme, .hireme__bottom {
   display: flex;
   flex-direction: column;
+  justify-content: center; }
+
+.details__project, .details__main, .details__back, .hireme__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom {
+  display: flex;
+  flex-direction: column;
   align-items: center; }
 
 .projects__links {
@@ -795,27 +880,51 @@ button {
   flex-direction: row;
   width: 100%; }
 
-.projects .project-logo {
+.projects .project-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 60vh;
-  width: 25vw; }
+  width: 25vw;
+  transition: all .4s ease-in; }
+  .projects .project-div .project-logo {
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    transform: translateY(0px); }
+  .projects .project-div .project-info {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out 0.3s;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    text-align: center; }
+    .projects .project-div .project-info p {
+      font-size: 1rem;
+      color: #eee5f1; }
+  .projects .project-div:hover {
+    background: #cb4f2f;
+    cursor: pointer; }
+    .projects .project-div:hover .project-info {
+      opacity: 1; }
+    .projects .project-div:hover .project-logo {
+      transition-timing-function: ease-out;
+      transition: 0.5s;
+      transform: translateY(-40px); }
 
-.projects .spacechat-logo {
+.projects .spacechat {
   background-color: #1b2735; }
-  .projects .spacechat-logo img {
+  .projects .spacechat img {
     height: 42px;
     width: 251px; }
 
-.projects .lingoly-logo {
+.projects .lingoly {
   background-color: #22874f; }
 
-.projects .covfefe-logo {
+.projects .covfefe {
   background-color: #D46A01; }
 
-.projects .life-logo {
+.projects .life {
   background-color: #467988; }
 
 .section-title {
@@ -833,8 +942,9 @@ button {
     text-align: center;
     line-height: 5rem;
     margin-bottom: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
+    letter-spacing: 2px;
     font-style: italic; }
 
 .quote-name {
@@ -848,7 +958,7 @@ button {
 .about__p, .projects, .hireme, .hireme__bottom {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: center; }
 
 .hireme__bottom {
   background: #f9f9f9;
@@ -865,28 +975,20 @@ button {
   font-size: 2.5rem;
   text-align: center;
   line-height: 3.5rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 5px;
   font-weight: 300; }
 
 .hireme__links {
   padding-top: 2rem; }
   .hireme__links-icon {
-    padding-right: 7rem; }
+    padding-right: 5rem; }
   .hireme__links-icon:last-child {
     padding-right: 0; }
 
 .hireme__hello {
   padding-top: 2rem;
   padding-bottom: 2rem; }
-
-.no-video .video-container video,
-.touch .video-container video {
-  display: none; }
-
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important; }
 
 .video-container {
   position: relative;
@@ -897,10 +999,12 @@ button {
   overflow: hidden;
   background: #000; }
 
-.video-container .poster img {
-  width: 100%;
-  bottom: 0;
-  position: absolute; }
+@keyframes moveToRight {
+  from {
+    transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
 
 .video-container .filter {
   z-index: 100;
@@ -914,13 +1018,12 @@ button {
   bottom: 0; }
 
 .video-container video.fillWidth {
-  width: 100%; }
+  width: 100%;
+  animation: moveToRight .7s ease-in-out both; }
 
-/*OTHER HOMEPAGE STYLES*/
-/*Transparent color over the video*/
+/*Transparent div over the video, shows the "go back" button */
 #overlay {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
+  top: 85%;
+  height: 50px;
+  width: 150px; }

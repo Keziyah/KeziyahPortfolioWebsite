@@ -1,17 +1,8 @@
-%flex-row-center {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-}
 
-%flex-col-center {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-}
+@import '../abstracts/variables'; 
 
-$highlight-on-black: rgba(243, 89, 49, 0.8); 
-$highlight-on-white: rgba(242, 127, 40, 0.6); 
+// $highlight-on-black: rgba(243, 89, 49, 0.8); 
+// $highlight-on-white: rgba(242, 127, 40, 0.6); 
 
 .hireme {
     @extend %flex-col-center;
@@ -40,7 +31,7 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
             font-size: 2.5rem; 
             text-align: center; 
             line-height: 3.5rem; 
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Lato', sans-serif;
             letter-spacing: 5px;
             font-weight: 300; 
         }
@@ -51,7 +42,7 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
         padding-top: 2rem; 
 
         &-icon {
-            padding-right: 7rem; 
+            padding-right: 5rem; 
         }
 
         &-icon:last-child {

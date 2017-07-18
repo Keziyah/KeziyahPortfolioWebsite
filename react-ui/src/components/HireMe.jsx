@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Scroll from 'react-scroll'
 const Element = Scroll.Element
 
@@ -11,27 +12,33 @@ const HireMe = (props) => {
             </div>
 
             <div className="quote">
-                <h1>
-                    I believe luck is preparation<br/>
-                    meeting opportunity. <br/>
-                </h1>
+                <ScrollAnimation animateIn="pulse" initiallyVisible="true">
+                    <h1>
+                        I believe luck is preparation<br/>
+                        meeting opportunity. <br/>
+                    </h1>
+                </ScrollAnimation>
             </div>
 
             <div className="quote-name">
-                <h3>- Oprah Winfrey</h3>
+                <Element name="contact">
+                    <h3>- Oprah Winfrey</h3>
+                </Element>
             </div>
 
            <div className="hireme__bottom">
-            <Element name="contact">
-                <div className="hireme__available">
-                    <h1>I'm <span className="highlight-white">available</span></h1>
-                </div>
-            </Element>
+            <ScrollAnimation animateIn="zoomIn">
+                    <div className="hireme__available">
+                        <h1>I'm <span className="highlight">available</span></h1>
+                    </div>
+            </ScrollAnimation>
 
-            <div className="hireme__job">
-                <h3>For a full time remote engineering role, <br/>
-                or front-end/full stack individual projects.</h3>
-            </div>
+            <ScrollAnimation animateIn="slideInUp">
+                <div className="hireme__job">
+                    <h3>For a full time remote engineering role, <br/>
+                    or front-end/full stack individual projects.</h3>
+                </div>
+            </ScrollAnimation>
 
             <div className="hireme__links">
                  <div className="hireme__links-icon">

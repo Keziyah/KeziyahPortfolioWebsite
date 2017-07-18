@@ -2,6 +2,8 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+@import '../abstracts/variables';
+
 /**
  * Set up a decent box model on the root element
  */
@@ -30,12 +32,15 @@ html {
     100% {opacity: 1;};
 }
 
- a {
+ a { //applies to social media links
   color: #333;
   text-decoration: none;
+  transition: all .2s ease-in; 
 
   &:hover {
-    color: #a5a09e; 
+    // color: #a5a09e;
+    // color: #f35931 
+    color: $main-accent;
   }
   
  }

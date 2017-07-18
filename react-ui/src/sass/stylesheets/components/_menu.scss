@@ -1,11 +1,13 @@
+@import '../abstracts/variables'; 
 
-.menu {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  animation: fade 0.5s ease-in-out;
-  z-index: 5; 
-}
+// .menu {
+//   display: flex; 
+//   flex-direction: column; 
+//   justify-content: center; 
+//   animation: fade 0.5s ease-in-out;
+//   z-index: 5;
+//   height: 100vh;  
+// }
 
 // .open {
 //     transition-timing-function: ease-out; 
@@ -19,15 +21,17 @@
 //     transform: translateY(-130%);
 //   }
 
-.menu-div {
+// .menu-div {
+//   display: flex; 
+//   flex-direction: column; 
+//   justify-content: center;
+//   align-items: center; 
 
-  padding-top: 8%;
-  padding-left: 43%;  //need to change this to something more flexboxy
-  
+//   h1 {
+//       font-size: 3rem; 
+//       font-family: 'Lato', sans-serif; 
+//       font-weight: 400; 
+//   }
 
-  h1 {
-      font-size: 4rem; 
-  }
-
-  background: rgba(243, 89, 49, 0.8);
-}
+//   background: $main-accent;
+// }

@@ -1,3 +1,4 @@
+@import '../abstracts/variables'; 
 %flex-row-center {
   display: flex; 
   flex-direction: row; 
@@ -19,16 +20,52 @@
         width: 100%; 
     }
 
-    .project-logo {
+    .project-div {
         display: flex; 
         flex-direction: column; 
         justify-content: center; 
         align-items: center; 
         height: 60vh; 
         width: 25vw; 
+        transition: all .4s ease-in; 
+
+        .project-logo {  //Smoothly move the logo back into place when mouse leaves
+            transition-timing-function: ease-in; 
+            transition: 0.5s; 
+            transform: translateY(0px);
+        }
+
+        .project-info {
+            opacity: 0; 
+            transition: opacity 0.25s ease-in-out 0.3s; 
+            margin: 0;
+            flex-wrap: wrap;
+            padding: 0 2rem; 
+            text-align: center;  
+
+            p {
+                font-size: 1rem; 
+                color: #eee5f1; 
+            } 
+        }
+
+        &:hover {
+            background: $main-accent; //On hover, fade the div to this color
+            cursor: pointer; 
+
+            .project-info {
+                opacity: 1; 
+            }
+            
+            .project-logo { //Smoothly move the logo up when mouse hovers
+                transition-timing-function: ease-out; 
+                transition: 0.5s; 
+                transform: translateY(-40px);
+            }
+        }
     }
 
-    .spacechat-logo {
+    .spacechat {
         background-color: #1b2735; 
         img {
             height: 42px; 
@@ -36,15 +73,15 @@
         }
     }
 
-    .lingoly-logo { 
+    .lingoly { 
         background-color: #22874f; 
     }
 
-    .covfefe-logo {
+    .covfefe {
         background-color: #D46A01; 
     }
 
-    .life-logo {
+    .life {
         background-color: #467988; 
     }
 }
@@ -69,8 +106,9 @@
             text-align: center;
             line-height: 5rem;
             margin-bottom: 0;  
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Lato', sans-serif;
             font-weight: 400; 
+            letter-spacing: 2px; 
             font-style: italic; 
         }
     }
@@ -79,3 +117,7 @@
         padding-top: -10%; 
     }
 //END QUOTE STYLES//
+
+// .example {
+//     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+// }

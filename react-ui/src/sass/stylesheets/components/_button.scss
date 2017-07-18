@@ -1,7 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-$main-off-white:  #eee5f1; 
+@import '../abstracts/variables'; 
+$main-off-white: #eee5f1; 
 
 button {
     border: 3px solid $main-off-white; 
@@ -13,10 +14,11 @@ button {
     cursor: pointer; 
     background: rgba(0, 0, 0, 0); 
     margin-top: 5%; 
+    transition: all .3s ease-in; 
 
     &:hover {
-        color: rgba(243, 89, 49, 0.8); 
-        border: 3px solid rgba(243, 89, 49, 0.8);
+        color: $main-accent; 
+        border: 3px solid $main-accent;
     }
 
     &:focus {
