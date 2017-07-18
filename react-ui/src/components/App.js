@@ -9,7 +9,6 @@ import About from './About'
 import Video from './Video'
 import '../sass/stylesheets/main.css'
 
-const Link = Scroll.Link
 const Element = Scroll.Element
 const Events = Scroll.Events
 const scroll = Scroll.animateScroll

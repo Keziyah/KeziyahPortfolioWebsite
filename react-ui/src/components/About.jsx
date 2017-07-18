@@ -1,4 +1,6 @@
 import React from 'react'
+import Scroll from 'react-scroll'
+const Link = Scroll.Link
 
 const About = (props) => {
     return (
@@ -11,8 +13,20 @@ const About = (props) => {
                         </div>
 
                         <div className="about__buttons">
-                            <button>Contact</button>
+                          
+                                <button>
+                                    <Link activeClass="active"
+                                        to="contact" 
+                                        spy={true}
+                                        smooth={"easeOutCubic"} 
+                                        duration={600}>
+                                    Contact
+                                    </Link>
+                                </button>
+                            
+
                             <button id="fly" onClick={props.toggleVid}>Watch me fly</button>
+
                         </div>
             </div>
 

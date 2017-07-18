@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
 import App from './components/App'
-import Contact from './components/Contact'
 import registerServiceWorker from './registerServiceWorker'
 
 
@@ -19,12 +19,17 @@ import rootReducer from './redux/index.js'
 const middleware = applyMiddleware(thunk, createLogger());
 export const store = createStore(rootReducer, middleware);
 
+ReactGA.initialize('UA-53642101-2')
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 ReactDOM.render(
     <Provider store={store}>
-        <Router>
+        <Router onUpdate={logPageView}>
             <div>
                 <Route exact path="/" component={App} />
-                <Route exact path="/contact" component={Contact} />
             </div>
         </Router>
     </Provider>,
