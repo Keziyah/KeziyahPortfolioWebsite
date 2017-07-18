@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -438,14 +438,14 @@ html {
   100% {
     opacity: 1; } }
 
-* {
-  font-family: 'Montserrat', sans-serif; }
-
 a {
   color: #333;
   text-decoration: none; }
   a:hover {
     color: #a5a09e; }
+
+* {
+  font-family: 'Montserrat', sans-serif; }
 
 /**
  * Basic typography style for copy text
@@ -515,39 +515,32 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px; }
+  height: 70px;
+  z-index: 6; }
   .header img {
     position: relative;
     top: 20px;
     left: 50px;
     width: 150px;
     height: 34.82px;
-    opacity: 0.4; }
+    opacity: 0.8; }
   .header--background {
     background: #000;
-    z-index: 1;
-    animation: header-appear 0.4s ease-out 0s 1; }
-  .header--invisible {
-    display: none; }
-
-@keyframes header-appear {
-  0% {
-    transform: translateY(-100%); }
-  100% {
-    transform: translateY(0); } }
-
-@keyframes header-leave {
-  0% {
+    z-index: 10;
+    transition-timing-function: ease-out;
+    transition: 0.5s;
     transform: translateY(0); }
-  100% {
-    transform: translateY(-100%); } }
+  .header--invisible {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    transform: translateY(-130%); }
 
 .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -574,7 +567,7 @@ button {
   border: 3px solid #eee5f1;
   width: 6em;
   height: 2em;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #eee5f1;
   padding: 3px;
   cursor: pointer;
@@ -595,7 +588,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -604,7 +597,8 @@ button {
   background-image: url("hero.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: blue; }
 
 .hero__burger {
   position: fixed;
@@ -621,11 +615,11 @@ button {
   width: 80%;
   color: #eee5f1; }
   .hero__greeting h1 {
-    font-size: 6rem; }
+    font-size: 3.5rem; }
   .hero__greeting h3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     padding-top: 5%; }
-  .hero__greeting button:nth-child(2) {
+  .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
 .details__project, .details__main, .details__back, .hireme__links {
@@ -633,60 +627,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.project {
-  animation: fade 1s ease-in; }
-  .project__type {
-    position: absolute;
-    left: 30px;
-    font-size: 2rem; }
-  .project__container {
-    padding: 2rem; }
-  .project__main {
-    text-align: center;
-    padding-top: 5%; }
-  .project__title {
-    font-size: 5rem; }
-    @media screen and (max-width: 675px) {
-      .project__title {
-        font-size: 3rem; } }
-    @media screen and (max-width: 415px) {
-      .project__title {
-        font-size: 2.2rem; } }
-  .project__tagline h1 {
-    line-height: 1.3 !important; }
-  @media screen and (max-width: 675px) {
-    .project__tagline {
-      padding-top: 10%;
-      font-size: 1rem; } }
-  @media screen and (max-width: 675px) {
-    .project__button {
-      padding-top: 30%; } }
-
-#spacechat-header {
-  font-family: 'Orbitron', sans-serif !important; }
-
-#spacechat {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: #efedec; }
-
-#lingoly {
-  background-color: #1eb270; }
-
-#animations {
-  background-color: #1d9de0;
-  color: #efedec; }
-
-.details__project, .details__main, .details__back, .hireme__links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -709,17 +650,18 @@ button {
     padding-top: 3%; }
     .about__p p {
       color: #eee5f1;
-      line-height: 5rem;
-      width: 80%; }
+      line-height: 3rem;
+      width: 90%; }
     @media screen and (max-width: 530px) {
       .about__p {
         font-size: 1.4rem; } }
     @media screen and (min-width: 531px) {
       .about__p {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     @media screen and (min-width: 1600px) {
       .about__p {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        line-height: 6rem; } }
   .about #fly {
     width: 200px; }
   .about__buttons {
@@ -732,17 +674,18 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: 0rem;
     height: 5vh;
     background: rgba(20, 20, 20, 0.5);
-    color: white; }
+    color: white;
+    font-size: 1rem; }
 
 .details__project, .details__main, .details__back, .hireme__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -787,14 +730,15 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fade 0.5s ease-in-out; }
+  animation: fade 0.5s ease-in-out;
+  z-index: 5; }
 
 .menu-div {
   padding-top: 8%;
   padding-left: 43%;
   background: rgba(243, 89, 49, 0.8); }
   .menu-div h1 {
-    font-size: 4em; }
+    font-size: 4rem; }
 
 .scroll-downs {
   position: absolute;
@@ -838,7 +782,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -876,15 +820,15 @@ button {
   padding-left: 7%;
   width: 40%; }
   .section-title h3 {
-    font-size: 2rem; }
+    font-size: 1rem; }
 
 .quote {
   width: 65%; }
   .quote h1 {
     border-left: 10px solid #979797;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
-    line-height: 7rem;
+    line-height: 5rem;
     margin-bottom: 0; }
 
 .quote-name {
@@ -895,7 +839,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.project__main, .about__p, .projects, .hireme {
+.about__p, .projects, .hireme {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -904,27 +848,27 @@ button {
   background: #f9f9f9; }
 
 .hireme__available h1 {
-  font-size: 14rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem; }
+  font-size: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
   .hireme__available h1 .highlight-white {
     background: rgba(242, 127, 40, 0.6); }
 
 .hireme__job h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
-  line-height: 5rem; }
+  line-height: 3.5rem; }
 
 .hireme__links {
-  padding-top: 3rem; }
+  padding-top: 2rem; }
   .hireme__links-icon {
-    padding-right: 10rem; }
+    padding-right: 7rem; }
   .hireme__links-icon:last-child {
     padding-right: 0; }
 
 .hireme__button {
   padding-top: 4rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 5rem; }
 
 .no-video .video-container video,
 .touch .video-container video {

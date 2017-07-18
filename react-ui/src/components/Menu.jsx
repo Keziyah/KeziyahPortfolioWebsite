@@ -1,8 +1,8 @@
 import React from 'react'; 
 
-const Menu = () => {
+const Menu = (props) => {
     return (
-        <div className="menu-div section">
+        <div className={props.open ? "open menu-div section" : "closed menu-div section"}>
             <h1>Home</h1>
             <h1>Work</h1>
             <h1>Contact</h1>

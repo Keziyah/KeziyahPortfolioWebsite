@@ -1,12 +1,11 @@
 .header {
-    //   flex: 0 0 auto;
-    //   padding-top: 70px;
     display: flex; 
     flex-direction: row;
     position: fixed; 
     top: 0; 
     width: 100%;
     height: 70px;
+    z-index: 6; 
 
     img {
         position: relative; 
@@ -14,32 +13,20 @@
         left: 50px; 
         width: 150px; 
         height: 34.82px; 
-        opacity: 0.4; 
+        opacity: 0.8; 
     }
 
-    &--background {
+    &--background {  //header appearing on scroll up
         background: #000; 
-        z-index: 1; 
-        animation: header-appear 0.4s ease-out 0s 1;
+        z-index: 10; 
+        transition-timing-function: ease-out; 
+        transition: 0.5s; 
+        transform: translateY(0); 
     }
 
-    &--invisible {
-        display: none; 
+    &--invisible { //header disapearing on scroll down
+        transition-timing-function: ease-in; 
+        transition: 0.3s; 
+        transform: translateY(-130%); 
     }
 }
-
-@keyframes header-appear {
-     0% {transform: translateY(-100%);};
-    100% {transform: translateY(0);};
-}
-
-@keyframes header-leave {
-    0% {transform: translateY(0);};
-    100% {transform: translateY(-100%);};
-}
-
-// .page-content {
-//     // flex: 1 1 auto;
-//     // position: relative;/* need this to position inner content */
-//     // overflow-y: auto;
-// }

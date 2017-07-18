@@ -4,7 +4,20 @@
   flex-direction: column; 
   align-items: center;
   animation: fade 0.5s ease-in-out;
+  z-index: 5; 
 }
+
+// .open {
+//     transition-timing-function: ease-out; 
+//     transition: 0.5s; 
+//     transform: translateY(0);
+//   }
+
+// .closed {
+//     transition-timing-function: ease-in; 
+//     transition: 0.3s; 
+//     transform: translateY(-130%);
+//   }
 
 .menu-div {
 
@@ -13,7 +26,7 @@
   
 
   h1 {
-      font-size: 4em; 
+      font-size: 4rem; 
   }
 
   background: rgba(243, 89, 49, 0.8);

@@ -1,4 +1,8 @@
 import React from 'react'
+import Scroll from 'react-scroll'
+import {Link} from 'react-router-dom'
+const Element = Scroll.Element
+
 
 const HireMe = (props) => {
     return (
@@ -17,10 +21,12 @@ const HireMe = (props) => {
             <div className="quote-name">
                 <h3>- Oprah Winfrey</h3>
             </div>
-        
-            <div className="hireme__available">
-                <h1>I'm <span className="highlight-white">available</span></h1>
-            </div>
+
+            <Element name="contact">
+                <div className="hireme__available">
+                    <h1>I'm <span className="highlight-white">available</span></h1>
+                </div>
+            </Element>
 
             <div className="hireme__job">
                 <h3>For a full time remote engineering role, <br/>
@@ -53,7 +59,7 @@ const HireMe = (props) => {
                             </div>
                         </div>
                             <div className="hireme__button">
-                                <button className="button-black">Say hello.</button>
+                                <Link to="/contact"><button className="button-black">Say hello.</button></Link>
                             </div>
                     </div>
     )
