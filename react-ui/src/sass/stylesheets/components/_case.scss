@@ -1,3 +1,4 @@
+//Styles for all case studies: Spacechat, Lingoly, and Covfefe Letter
 @import '../abstracts/variables'; 
 
 .case-study {
@@ -22,16 +23,37 @@
         font-family: 'Lato', sans-serif; 
         margin-bottom: 0; 
         margin-top: 1rem; 
+        text-align: center; 
+
+        @media screen and (max-width: 800px) {
+            font-size: 3rem; 
+            width: 90%; 
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 2rem; 
+        }
     }
 
     h5 {
         margin-bottom: 0; 
+
+        @media screen and (max-width: 700px) {
+            font-size: 0.8rem; 
+            text-align: center; 
+            width: 70%; 
+        }
     }
 
     h4 {
         width: 50%; 
         text-align: center; 
         font-family: 'Lato', sans-serif;
+
+        @media screen and (max-width: 800px) {
+            font-size: 1rem; 
+            width: 70%; 
+        }
     }
 }
 
@@ -43,8 +65,10 @@
     &__image {
         @extend %flex-row-center;
         
-        img {
-            max-width: 100%; 
+        @media screen and (min-width: 600px) {
+            height: 70%; 
+            width: 70%; 
+            margin: 0 auto; 
         }
     }
 }
@@ -54,8 +78,15 @@
     padding-top: 2rem; 
     padding-bottom: 2rem; 
 
+    @media screen and (max-width: 600px) {
+        font-size: 0.9rem; 
+    }
+
     &-icon {
             padding-right: 5rem; 
+            @media screen and (max-width: 600px) {
+                padding-right: 3rem; 
+            }
         }
 
     &-icon:last-child {
@@ -67,7 +98,7 @@
     text-align: center; 
 }
 
-.double-image {
-    @extend %flex-row-center; 
-    // flex-wrap: wrap; 
-}
+// .double-image {
+//     @extend %flex-row-center; 
+//     // flex-wrap: wrap; 
+// }
