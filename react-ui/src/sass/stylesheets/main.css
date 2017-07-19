@@ -1,9 +1,9 @@
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -412,6 +412,16 @@ template {
 [hidden] {
   display: none; }
 
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -429,6 +439,10 @@ html {
 *::after {
   box-sizing: inherit; }
 
+img {
+  width: 100%;
+  height: 100%; }
+
 /**
  * Basic fade animation
  */
@@ -438,8 +452,15 @@ html {
   100% {
     opacity: 1; } }
 
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all .2s ease-in; }
+  a:hover {
+    color: #cb4f2f; }
+
 * {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 /**
  * Basic typography style for copy text
@@ -503,19 +524,100 @@ body {
   position: absolute;
   width: 1px; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 6; }
+  .header .open {
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    opacity: 1; }
+  .header .closed {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    opacity: 0;
+    transform: opacity; }
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5%;
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    right: 3em; }
+    @media screen and (max-width: 950px) {
+      .header nav {
+        right: 4em; } }
+    @media screen and (max-width: 650px) {
+      .header nav {
+        top: 15px;
+        width: 80%; } }
+    @media screen and (max-width: 360px) {
+      .header nav {
+        padding-left: 9%; } }
+    .header nav h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #eee5f1;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color .3s ease-in; }
+      @media screen and (max-width: 650px) {
+        .header nav h3 {
+          font-size: 0.7rem; } }
+      .header nav h3:hover {
+        color: #cb4f2f; }
+  .header img {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 150px;
+    height: 34.82px;
+    opacity: 0.8; }
+    @media screen and (max-width: 650px) {
+      .header img {
+        display: none; } }
+  .header--background {
+    background: #000;
+    z-index: 10;
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    transform: translateY(0); }
+  .header--invisible {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    transform: translateY(-130%); }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 html, body {
   overflow-x: hidden;
-  width: 100vw; }
+  width: 100vw;
+  margin: 0; }
 
 .container {
   display: flex;
@@ -523,228 +625,592 @@ html, body {
   align-items: center;
   margin: auto; }
 
-.section, .project, .hero, .details {
+.hero, .menu-div {
   height: 100vh;
   width: 100vw; }
 
-button {
-  border: none;
-  width: 14em;
-  height: 3em;
-  border-radius: 40px/30px;
-  font-size: 12px;
-  color: #333;
-  padding: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: #efedec;
-  margin-top: 5%; }
-  button:hover {
-    background: #ddd; }
-  button:focus {
-    outline: none; }
+.page-content {
+  animation: fade 0.5s ease-in-out; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+button {
+  border: 3px solid #eee5f1;
+  width: 6em;
+  height: 2em;
+  font-size: 1.5rem;
+  color: #eee5f1;
+  padding: 3px;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 5%;
+  transition: all .3s ease-in; }
+  button:hover {
+    color: #cb4f2f;
+    border: 3px solid #cb4f2f; }
+  button:focus {
+    outline: none; }
+  @media screen and (max-width: 800px) {
+    button {
+      font-size: 1rem;
+      width: 5em; } }
+
+.button-black {
+  color: #333;
+  border-color: #333; }
+  @media screen and (max-width: 800px) {
+    .button-black {
+      font-size: 1rem;
+      width: 5em; } }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .hero {
-  background-image: url("EssaouiraMedina.JPG");
+  background-image: url("hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.hero__text {
-  padding-top: 10%; }
-  .hero__text--name {
-    font-size: 4rem;
-    text-transform: uppercase; }
-  @media screen and (min-width: 850px) {
-    .hero__text--tagline h1 {
-      background: rgba(255, 255, 255, 0.7); } }
+.hero__burger {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  cursor: pointer; }
 
-.down {
-  text-align: center;
-  position: relative;
-  bottom: -30%;
-  color: #ddd; }
+.highlight {
+  background: #cb4f2f; }
 
-@media screen and (max-width: 700px) {
-  .hero__text--name {
-    font-size: 3rem; } }
-
-@media screen and (max-width: 530px) {
-  .hero__text--name {
-    font-size: 2rem; }
-  .hero__text--tagline {
-    font-size: 1rem; } }
-
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.project__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.project {
-  animation: fade 1s ease-in; }
-  .project__type {
-    position: absolute;
-    left: 30px;
-    font-size: 2rem; }
-  .project__container {
-    padding: 2rem; }
-  .project__main {
-    text-align: center;
+.hero__greeting {
+  padding-top: 7%;
+  padding-left: 10%;
+  width: 80%;
+  color: #eee5f1; }
+  @media screen and (max-width: 600px) {
+    .hero__greeting {
+      width: 85%; } }
+  @media screen and (max-height: 400px) {
+    .hero__greeting {
+      padding-top: 2%; } }
+  .hero__greeting h1 {
+    font-size: 3.5rem; }
+    @media screen and (max-width: 1000px) {
+      .hero__greeting h1 {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 750px) {
+      .hero__greeting h1 {
+        padding-top: 15%;
+        font-size: 2rem; } }
+    @media screen and (max-width: 630px) {
+      .hero__greeting h1 {
+        font-size: 1.7rem; } }
+    @media screen and (max-height: 400px) {
+      .hero__greeting h1 {
+        font-size: 1.5rem; } }
+  .hero__greeting h3 {
+    font-size: 2rem;
     padding-top: 5%; }
-  .project__title {
-    font-size: 5rem; }
-    @media screen and (max-width: 675px) {
-      .project__title {
-        font-size: 3rem; } }
-    @media screen and (max-width: 415px) {
-      .project__title {
-        font-size: 2.2rem; } }
-  .project__tagline h1 {
-    line-height: 1.3 !important; }
-  @media screen and (max-width: 675px) {
-    .project__tagline {
-      padding-top: 10%;
-      font-size: 1rem; } }
-  @media screen and (max-width: 675px) {
-    .project__button {
-      padding-top: 30%; } }
+    @media screen and (max-width: 900px) {
+      .hero__greeting h3 {
+        font-size: 1.5rem; } }
+    @media screen and (max-height: 400px) {
+      .hero__greeting h3 {
+        font-size: 1rem; } }
+  .hero__greeting a, .hero__greeting button {
+    font-family: 'Open Sans', sans-serif; }
+  .hero__greeting a:nth-child(2) {
+    margin-left: 20px; }
 
-#spacechat-header {
-  font-family: 'Orbitron', sans-serif !important; }
-
-#spacechat {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: #efedec; }
-
-#lingoly {
-  background-color: #1eb270; }
-
-#animations {
-  background-color: #1d9de0;
-  color: #efedec; }
-
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .about {
   text-align: center;
-  background-image: url("dubai_zipline.jpg");
+  height: 100vh;
+  background-image: url("dubai_zipline.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .about__main {
-    padding-top: 7%;
-    max-width: 80%; }
+    padding-top: 8%;
+    max-width: 100%;
+    height: 95vh; }
     @media screen and (max-width: 700px) {
       .about__main {
         padding-top: 20%; } }
-  .about img {
-    width: 175px;
-    border-radius: 50%;
-    display: none; }
-    @media screen and (max-width: 530px) {
-      .about img {
-        width: 150px; } }
+    @media screen and (max-height: 400px) {
+      .about__main {
+        padding-top: 2%; } }
   .about__p {
     padding-top: 3%; }
     .about__p p {
-      background: rgba(255, 255, 255, 0.5); }
-    @media screen and (max-width: 530px) {
-      .about__p {
-        font-size: 1.4rem; } }
-    @media screen and (min-width: 531px) {
-      .about__p {
-        font-size: 2rem; } }
-    @media screen and (min-width: 1600px) {
-      .about__p {
-        font-size: 3rem; } }
-  .about__contact {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 6%; }
-    .about__contact-icon {
-      padding-left: 5%;
-      font-size: 1.5rem; }
-      .about__contact-icon a {
-        color: rgba(239, 237, 236, 0.9);
-        text-decoration: none; }
-        .about__contact-icon a:hover {
-          color: #a5a09e; }
-        .about__contact-icon a p {
-          background: rgba(0, 0, 0, 0.5); }
-      @media screen and (max-width: 530px) {
-        .about__contact-icon {
-          font-size: 1.2rem;
-          padding-left: 3%; } }
-      @media screen and (max-width: 375px) {
-        .about__contact-icon {
+      color: #eee5f1;
+      line-height: 3rem;
+      width: 90%; }
+      @media screen and (max-width: 550px) {
+        .about__p p {
+          line-height: 2.5rem; } }
+      @media screen and (max-width: 350px) {
+        .about__p p {
+          line-height: 2rem;
           font-size: 1rem;
-          padding: auto; } }
+          width: 85%; } }
+      @media screen and (max-height: 400px) {
+        .about__p p {
+          line-height: 1.8rem;
+          font-size: 1rem; } }
+    @media screen and (max-width: 550px) {
+      .about__p {
+        padding-top: 0; } }
+  .about #fly {
+    width: 200px;
+    padding-left: 9px;
+    padding-bottom: 8px; }
+    .about #fly i {
+      font-size: 1.7rem;
+      position: relative;
+      top: 5px; }
+      @media screen and (max-width: 800px) {
+        .about #fly i {
+          display: none; } }
+    @media screen and (max-width: 600px) {
+      .about #fly {
+        display: none; } }
+    @media screen and (max-width: 800px) {
+      .about #fly {
+        width: 125px; } }
+  .about__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .about__buttons button:nth-child(2) {
+      margin-left: 20px; }
+    .about__buttons a {
+      color: #eee5f1;
+      width: 200px; }
+      .about__buttons a:hover {
+        color: #cb4f2f; }
 
-.hero__text--name, .hero__text--tagline, .about, .about__contact, .details__project, .details__main, .details__back {
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  height: 5vh;
+  background: rgba(20, 20, 20, 0.5);
+  color: #eee5f1;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center; }
+  @media screen and (max-width: 550px) {
+    footer {
+      font-size: 0.7rem; } }
+  @media screen and (max-height: 400px) {
+    footer {
+      font-size: 0.5rem;
+      padding: 0.3rem; } }
+
+.scroll-downs {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin: auto;
+  z-index: 0;
+  width: 34px;
+  height: 55px; }
+  @media screen and (max-width: 800px) {
+    .scroll-downs {
+      display: none; } }
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75; }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 10%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite; }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(15px);
+    opacity: 0; } }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.project__main {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.details {
-  animation: fade 1s ease-in; }
-  .details__project {
-    padding-top: 2%; }
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-@media screen and (max-width: 650px) and (min-width: 375px) {
-  .details__project {
-    padding-top: 10%; } }
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.projects__links {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  @media screen and (max-width: 950px) {
+    .projects__links {
+      flex-wrap: wrap; } }
+
+.projects .project-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 33.3333vw;
+  transition: all .4s ease-in; }
+  @media screen and (max-width: 950px) {
+    .projects .project-div {
+      width: 100vw; } }
+  .projects .project-div img {
+    width: 100%; }
+  .projects .project-div .project-logo {
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    transform: translateY(0px); }
+  .projects .project-div .project-info {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out 0.3s;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    text-align: center; }
+    .projects .project-div .project-info p {
+      font-size: 1rem;
+      color: #eee5f1; }
+  .projects .project-div:hover {
+    background: #cb4f2f;
+    cursor: pointer; }
+    .projects .project-div:hover .project-info {
+      opacity: 1; }
+    .projects .project-div:hover .project-logo {
+      transition-timing-function: ease-out;
+      transition: 0.5s;
+      transform: translateY(-40px); }
+
+.projects .spacechat {
+  background-color: #1b2735; }
+
+.projects .lingoly {
+  background-color: #22874f; }
+
+.projects .covfefe {
+  background-color: #D46A01; }
+
+.projects .life {
+  background-color: #467988; }
+
+.section-title {
+  align-self: flex-start;
+  padding-left: 7%;
+  width: 40%; }
+  @media screen and (max-width: 600px) {
+    .section-title {
+      width: 60%; } }
+  .section-title h3 {
+    font-size: 1rem; }
+
+.quote {
+  width: 65%; }
+  @media screen and (max-width: 550px) {
+    .quote {
+      width: 75%; } }
+  .quote h1 {
+    border-left: 10px solid #979797;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic; }
+    @media screen and (max-width: 900px) {
+      .quote h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        border-left: 7px solid #979797; } }
     @media screen and (max-width: 650px) {
-      .details__project h3 {
-        font-size: 1.2rem; } }
-    @media screen and (max-width: 1100px) and (min-width: 550px) {
-      .details__project h3 {
+      .quote h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        border-left: 5px solid #979797;
+        padding-left: 0.5rem; } }
+
+.quote-name {
+  padding-top: -10%; }
+  @media screen and (max-width: 900px) {
+    .quote-name {
+      font-size: 1rem; } }
+  @media screen and (max-width: 400px) {
+    .quote-name {
+      font-size: 0.7rem; } }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hireme__bottom {
+  background: #f9f9f9;
+  width: 100%; }
+
+.hireme__available h1 {
+  font-size: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
+  .hireme__available h1 .highlight-white {
+    background: rgba(242, 127, 40, 0.6); }
+  @media screen and (max-width: 1100px) {
+    .hireme__available h1 {
+      font-size: 7rem; } }
+  @media screen and (max-width: 900px) {
+    .hireme__available h1 {
+      font-size: 4rem; } }
+  @media screen and (max-width: 500px) {
+    .hireme__available h1 {
+      font-size: 2.5rem; } }
+
+.hireme__job h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 300; }
+  @media screen and (max-width: 1100px) {
+    .hireme__job h3 {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 900px) {
+    .hireme__job h3 {
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: 400; } }
+  @media screen and (max-width: 450px) {
+    .hireme__job h3 {
+      width: 90%; } }
+
+.hireme__links {
+  padding-top: 2rem; }
+  .hireme__links-icon {
+    padding-right: 5rem; }
+    @media screen and (max-width: 600px) {
+      .hireme__links-icon {
+        padding-right: 2rem; } }
+  .hireme__links-icon:last-child {
+    padding-right: 0; }
+  @media screen and (max-width: 900px) {
+    .hireme__links {
+      font-size: 1rem; } }
+  @media screen and (max-width: 600px) {
+    .hireme__links {
+      font-size: 0.5rem; } }
+
+.hireme__hello {
+  padding: 2rem;
+  display: none; }
+  .hireme__hello img {
+    display: none; }
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #000; }
+  @media screen and (max-width: 1250px) {
+    .video-container {
+      height: 90vh; } }
+  @media screen and (max-width: 1100px) {
+    .video-container {
+      height: 86vh; } }
+  @media screen and (max-width: 950px) {
+    .video-container {
+      height: 75vh; } }
+  @media screen and (max-width: 880px) {
+    .video-container {
+      height: 68vh; } }
+  @media screen and (max-width: 680px) {
+    .video-container {
+      height: 60vh; } }
+  @media screen and (max-width: 550px) {
+    .video-container {
+      height: 50vh; } }
+
+@keyframes moveToRight {
+  from {
+    transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%; }
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0; }
+
+.video-container video.fillWidth {
+  width: 100%;
+  animation: moveToRight .7s ease-in-out both; }
+
+/*Transparent div over the video, shows the "go back" button */
+#overlay {
+  position: absolute;
+  top: 85%;
+  height: 50px;
+  width: 150px; }
+  @media screen and (max-width: 950px) {
+    #overlay {
+      top: 10px; } }
+  @media screen and (max-width: 880px) {
+    #overlay {
+      top: 2px; } }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.case-study {
+  padding-top: -70px;
+  animation: fade 1s ease-out; }
+
+.header-project {
+  background: #000;
+  color: #eee5f1 !important;
+  position: static; }
+
+.project-hero {
+  box-shadow: 0 2px 2px -2px gray;
+  width: 100%; }
+  .project-hero h1 {
+    font-size: 5rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      .project-hero h1 {
+        font-size: 3rem;
+        width: 90%; } }
+    @media screen and (max-width: 400px) {
+      .project-hero h1 {
         font-size: 2rem; } }
-    .details__project--right {
-      color: #777977; }
-  .details__main {
-    padding-top: 5%;
-    flex-wrap: wrap; }
-  @media screen and (min-width: 1300px) {
-    .details__video {
-      width: 50%; } }
-  @media screen and (min-width: 1600px) {
-    .details__video {
-      width: 40%; } }
-  .details__text {
-    width: 40%;
-    font-size: 1.5rem;
-    padding-left: 0.5rem; }
-    @media screen and (max-width: 1100px) {
-      .details__text {
-        width: 90%;
-        height: 200px;
-        overflow-y: scroll;
-        margin-top: 5%; } }
+  .project-hero h5 {
+    margin-bottom: 0; }
+    @media screen and (max-width: 700px) {
+      .project-hero h5 {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 70%; } }
+  .project-hero h4 {
+    width: 50%;
+    text-align: center;
+    font-family: 'Lato', sans-serif; }
+    @media screen and (max-width: 800px) {
+      .project-hero h4 {
+        font-size: 1rem;
+        width: 70%; } }
+
+.project-body {
+  width: 75%;
+  margin: auto; }
+  @media screen and (min-width: 600px) {
+    .project-body__image {
+      height: 70%;
+      width: 70%;
+      margin: 0 auto; } }
+
+.project__links {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media screen and (max-width: 600px) {
+    .project__links {
+      font-size: 0.9rem; } }
+  .project__links-icon {
+    padding-right: 5rem; }
+    @media screen and (max-width: 600px) {
+      .project__links-icon {
+        padding-right: 3rem; } }
+  .project__links-icon:last-child {
+    padding-right: 0; }
+
+.project-contact {
+  text-align: center; }

@@ -1,26 +1,44 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+@import '../abstracts/variables'; 
+$main-off-white: #eee5f1; 
 
 button {
-    border: none; 
-    width: 14em; 
-    height: 3em; 
-    border-radius: 40px/30px; 
-    font-size: 12px;
-    color: #333;  
-    padding: 10px; 
-    text-transform: uppercase; 
+    border: 3px solid $main-off-white; 
+    width: 6em; 
+    height: 2em; 
+    font-size: 1.5rem;
+    color: $main-off-white;  
+    padding: 3px; 
     cursor: pointer; 
-    background: #efedec; 
+    background: rgba(0, 0, 0, 0); 
     margin-top: 5%; 
+    transition: all .3s ease-in; 
 
     &:hover {
-        background: #ddd; 
+        color: $main-accent; 
+        border: 3px solid $main-accent;
     }
 
     &:focus {
         outline: none; 
     }
 
+    @media screen and (max-width: 800px) {
+        font-size: 1rem; 
+        width: 5em; 
+    }
+
 }
+
+.button-black {
+     color: #333; 
+     border-color: #333;
+
+     @media screen and (max-width: 800px) {
+        font-size: 1rem; 
+        width: 5em; 
+    }
+}
+

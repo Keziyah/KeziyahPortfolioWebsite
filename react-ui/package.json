@@ -1,11 +1,12 @@
 {
-  "name": "portfolio1",
+  "name": "keziyah-portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
-    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
+    "react-hamburger-menu": "0.0.4",
+    "react-headroom": "^2.1.6",
     "react-youtube": "^7.4.0"
   },
   "devDependencies": {

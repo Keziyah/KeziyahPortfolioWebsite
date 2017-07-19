@@ -1,0 +1,164 @@
+@import '../abstracts/variables'; 
+%flex-row-center {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+}
+
+%flex-col-center {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.projects {
+    @extend %flex-col-center;  
+
+    &__links {
+        display: flex; 
+        flex-direction: row; 
+        width: 100%;
+        
+        @media screen and (max-width: 950px) {
+            flex-wrap: wrap; 
+        }
+    }
+
+    .project-div {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 60vh; 
+        width: 33.3333vw; 
+        transition: all .4s ease-in; 
+
+        @media screen and (max-width: 950px) {
+            width: 100vw; 
+        }
+
+        img {
+            width: 100%; 
+        }
+
+        .project-logo {  //Smoothly move the logo back into place when mouse leaves
+            transition-timing-function: ease-in; 
+            transition: 0.5s; 
+            transform: translateY(0px);
+        }
+
+        .project-info {
+            opacity: 0; 
+            transition: opacity 0.25s ease-in-out 0.3s; 
+            margin: 0;
+            flex-wrap: wrap;
+            padding: 0 2rem; 
+            text-align: center;  
+
+            p {
+                font-size: 1rem; 
+                color: #eee5f1; 
+            } 
+        }
+
+        &:hover {
+            background: $main-accent; //On hover, fade the div to this color
+            cursor: pointer; 
+
+            .project-info {
+                opacity: 1; 
+            }
+            
+            .project-logo { //Smoothly move the logo up when mouse hovers
+                transition-timing-function: ease-out; 
+                transition: 0.5s; 
+                transform: translateY(-40px);
+            }
+        }
+    }
+
+    .spacechat {
+        background-color: #1b2735; 
+        img {
+            // height: 42px; 
+            // width: 251px; 
+        }
+    }
+
+    .lingoly { 
+        background-color: #22874f; 
+    }
+
+    .covfefe {
+        background-color: #D46A01; 
+    }
+
+    .life {
+        background-color: #467988; 
+    }
+}
+
+//BEGIN QUOTE STYLES
+    .section-title {
+        align-self: flex-start;
+        padding-left: 7%; 
+        width: 40%; 
+
+        @media screen and (max-width: 600px) {
+            width: 60%; 
+        }
+
+        h3 {
+            font-size: 1rem; 
+        }  
+    }
+
+    .quote {
+        width: 65%; 
+
+        @media screen and (max-width: 550px) {
+            width: 75%; 
+        }
+
+        h1 {
+            border-left: 10px solid #979797;
+            font-size: 3rem; 
+            text-align: center;
+            line-height: 5rem;
+            margin-bottom: 0;  
+            font-family: 'Lato', sans-serif;
+            font-weight: 400; 
+            letter-spacing: 2px; 
+            font-style: italic; 
+
+            @media screen and (max-width: 900px) {
+                font-size: 2rem; 
+                line-height: 3rem; 
+                border-left: 7px solid #979797; 
+            }
+
+            @media screen and (max-width: 650px) {
+                font-size: 1.5rem; 
+                line-height: 2rem; 
+                border-left: 5px solid #979797;
+                padding-left: 0.5rem; 
+            }
+        }
+    }
+
+    .quote-name {
+        padding-top: -10%;
+        
+        @media screen and (max-width: 900px) {
+                font-size: 1rem;     
+        }
+
+         @media screen and (max-width: 400px) {
+                font-size: 0.7rem; 
+        }
+    }
+//END QUOTE STYLES//
+
+// .example {
+//     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+// }

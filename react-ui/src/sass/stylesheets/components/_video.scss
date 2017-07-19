@@ -1,0 +1,81 @@
+//CSS page transitions: https://github.com/codrops/PageTransitions/blob/master/css/animations.css
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #000;
+    // animation: moveToLeft .7s ease-in-out both;
+
+    @media screen and (max-width: 1250px) {
+        height: 90vh; 
+    }
+
+    @media screen and (max-width: 1100px) {
+        height: 86vh; 
+    }
+
+    @media screen and (max-width: 950px) {
+        height: 75vh; 
+    }
+
+    @media screen and (max-width: 880px) {
+        height: 68vh; 
+    }
+
+    @media screen and (max-width: 680px) {
+        height: 60vh; 
+    }
+
+    @media screen and (max-width: 550px) {
+        height: 50vh; 
+    }
+}
+
+@keyframes moveToRight {
+	from {transform: translateX(-100%) }
+	to { -webkit-transform: translateX(0%); transform: translateX(0%); }
+}
+// .video-container .poster img {
+//     width: 100%;
+//     bottom: 0;
+//     position: absolute;
+// }
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    
+}
+.video-container video.fillWidth {
+    width: 100%;
+    animation: moveToRight .7s ease-in-out both;
+}
+
+/*Transparent div over the video, shows the "go back" button */
+#overlay {
+    position: absolute;
+    // right: 0; 
+    // left: 0; 
+    // bottom: 0;
+    top: 85%; 
+    height: 50px; 
+    width: 150px; 
+
+    @media screen and (max-width: 950px) {
+        top: 10px; 
+    }
+
+    @media screen and (max-width: 880px) {
+        top: 2px; 
+    }
+}

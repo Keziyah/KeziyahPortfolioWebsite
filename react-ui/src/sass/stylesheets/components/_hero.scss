@@ -1,3 +1,5 @@
+@import '../abstracts/variables'; 
+
 %flex-row-center {
   display: flex; 
   flex-direction: row; 
@@ -9,56 +11,79 @@
   flex-direction: column; 
   justify-content: center;
 }
+ 
+$highlight-on-white: rgba(242, 127, 40, 0.6); 
 
 .hero {
-    background-image: url('EssaouiraMedina.JPG'); 
+    background-image: url('hero.png'); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 
-.hero__text {
-    padding-top: 10%; 
-     &--name {
-        font-size: 4rem; 
-        text-transform: uppercase; 
-        @extend %flex-row-center; 
-    }
-
-    &--tagline  {
-        @extend %flex-row-center;
-
-        @media screen and (min-width: 850px) {
-            h1 {
-            background: rgba(255, 255, 255, 0.7);
-        }
-    }   
-    }
+.hero__burger {
+    position: fixed; 
+    top: 20px; 
+    right: 30px; 
+    cursor: pointer;  
 }
 
-.down {
-    text-align: center; 
-    position: relative; 
-    bottom: -30%; 
-    color: #ddd; 
+.highlight {
+    background: $main-accent; 
 }
 
-@media screen and (max-width: 700px) {
-    .hero__text {
-        &--name {
-            font-size: 3rem; 
-        }
+.hero__greeting {
+    padding-top: 7%; 
+    padding-left: 10%;
+    width: 80%;  
+    color: $main-off-white; 
+
+    @media screen and (max-width: 600px) {
+        width: 85%; 
     }
-}
 
-@media screen and (max-width: 530px) {
-    .hero__text {
-        &--name {
+    @media screen and (max-height: 400px) {
+            padding-top: 2%;  
+    } 
+        h1 {
+            font-size: 3.5rem; 
+
+            @media screen and (max-width: 1000px) {
+                font-size: 2.5rem; 
+            }
+
+            @media screen and (max-width: 750px) {
+                padding-top: 15%; 
+                font-size: 2rem; 
+            }
+
+            @media screen and (max-width: 630px) {
+                font-size: 1.7rem; 
+            }
+            
+            @media screen and (max-height: 400px) {
+                font-size: 1.5rem;   
+            }
+        }  
+        h3 {
             font-size: 2rem; 
+            padding-top: 5%; 
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem; 
+            }
+
+            @media screen and (max-height: 400px) {
+                font-size: 1rem;   
+            }
         }
 
-        &--tagline  {
-            font-size: 1rem; 
+        a, button {
+            font-family: 'Open Sans', sans-serif;
         }
-    }   
+
+        a:nth-child(2) {
+            margin-left: 20px;  
+        }
 }
+

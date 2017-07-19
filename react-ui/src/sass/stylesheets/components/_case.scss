@@ -1,0 +1,104 @@
+//Styles for all case studies: Spacechat, Lingoly, and Covfefe Letter
+@import '../abstracts/variables'; 
+
+.case-study {
+    @extend %flex-col-center;
+    padding-top: -70px; 
+    animation: fade 1s ease-out;  
+}
+
+.header-project { //most of the styes are same as front page header
+    background: #000; 
+    color: $main-off-white !important; 
+    position: static; 
+}
+
+.project-hero {
+    @extend %flex-col-center; 
+    box-shadow: 0 2px 2px -2px gray; 
+    width: 100%; 
+
+    h1 {
+        font-size: 5rem; 
+        font-family: 'Lato', sans-serif; 
+        margin-bottom: 0; 
+        margin-top: 1rem; 
+        text-align: center; 
+
+        @media screen and (max-width: 800px) {
+            font-size: 3rem; 
+            width: 90%; 
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 2rem; 
+        }
+    }
+
+    h5 {
+        margin-bottom: 0; 
+
+        @media screen and (max-width: 700px) {
+            font-size: 0.8rem; 
+            text-align: center; 
+            width: 70%; 
+        }
+    }
+
+    h4 {
+        width: 50%; 
+        text-align: center; 
+        font-family: 'Lato', sans-serif;
+
+        @media screen and (max-width: 800px) {
+            font-size: 1rem; 
+            width: 70%; 
+        }
+    }
+}
+
+.project-body {
+    // width: 80%; 
+    // font-family: 'Noto Serif', serif; 
+    width: 75%; 
+    margin: auto; 
+    &__image {
+        @extend %flex-row-center;
+        
+        @media screen and (min-width: 600px) {
+            height: 70%; 
+            width: 70%; 
+            margin: 0 auto; 
+        }
+    }
+}
+
+.project__links {
+    @extend %flex-row-center; 
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+
+    @media screen and (max-width: 600px) {
+        font-size: 0.9rem; 
+    }
+
+    &-icon {
+            padding-right: 5rem; 
+            @media screen and (max-width: 600px) {
+                padding-right: 3rem; 
+            }
+        }
+
+    &-icon:last-child {
+            padding-right: 0; 
+        }
+}
+
+.project-contact {
+    text-align: center; 
+}
+
+// .double-image {
+//     @extend %flex-row-center; 
+//     // flex-wrap: wrap; 
+// }

@@ -14,7 +14,17 @@
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "react-animate-on-scroll": "^1.2.1",
+    "react-dom": "^15.6.1",
+    "react-ga": "^2.2.0",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "react-scroll": "^1.5.4",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   },
   "repository": {
     "type": "git",
