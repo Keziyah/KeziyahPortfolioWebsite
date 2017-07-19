@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import Scroll from 'react-scroll'
 const Link = Scroll.Link
 
@@ -8,13 +8,13 @@ const Hero = (props) => {
         <div className="hero">
 
             <div className="hero__greeting">
-                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}>
+                {/* <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}> */}
                     <h1>Hi. I'm Keziyah, a full stack <br /> software engineer.</h1>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}>
+                {/* <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}> */}
                     <h3>I build <em>experiences</em>. <span className="highlight">Let me build yours.</span></h3>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
                 
                 <div className="hero__buttons">
                     <Link activeClass="active"

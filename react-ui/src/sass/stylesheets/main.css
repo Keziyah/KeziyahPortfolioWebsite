@@ -1,4 +1,4 @@
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -412,7 +412,7 @@ template {
 [hidden] {
   display: none; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -520,7 +520,7 @@ body {
   position: absolute;
   width: 1px; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -551,11 +551,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 5%;
+    padding-left: 5%;
     width: 40%;
     position: absolute;
     top: 10px;
-    left: 32em; }
+    right: 3em; }
+    @media screen and (max-width: 950px) {
+      .header nav {
+        right: 4em; } }
+    @media screen and (max-width: 650px) {
+      .header nav {
+        top: 15px;
+        width: 80%; } }
+    @media screen and (max-width: 360px) {
+      .header nav {
+        padding-left: 9%; } }
     .header nav h3 {
       font-family: 'Lato', sans-serif;
       font-weight: 300;
@@ -564,6 +574,9 @@ body {
       text-transform: uppercase;
       cursor: pointer;
       transition: color .3s ease-in; }
+      @media screen and (max-width: 650px) {
+        .header nav h3 {
+          font-size: 0.7rem; } }
       .header nav h3:hover {
         color: #cb4f2f; }
   .header img {
@@ -573,6 +586,9 @@ body {
     width: 150px;
     height: 34.82px;
     opacity: 0.8; }
+    @media screen and (max-width: 650px) {
+      .header img {
+        display: none; } }
   .header--background {
     background: #000;
     z-index: 10;
@@ -584,7 +600,7 @@ body {
     transition: 0.3s;
     transform: translateY(-130%); }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -612,7 +628,7 @@ html, body {
 .page-content {
   animation: fade 0.5s ease-in-out; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -638,12 +654,20 @@ button {
     border: 3px solid #cb4f2f; }
   button:focus {
     outline: none; }
+  @media screen and (max-width: 800px) {
+    button {
+      font-size: 1rem;
+      width: 5em; } }
 
 .button-black {
   color: #333;
   border-color: #333; }
+  @media screen and (max-width: 800px) {
+    .button-black {
+      font-size: 1rem;
+      width: 5em; } }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -653,7 +677,7 @@ button {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -683,17 +707,42 @@ button {
   padding-left: 10%;
   width: 80%;
   color: #eee5f1; }
+  @media screen and (max-width: 600px) {
+    .hero__greeting {
+      width: 85%; } }
+  @media screen and (max-height: 400px) {
+    .hero__greeting {
+      padding-top: 2%; } }
   .hero__greeting h1 {
     font-size: 3.5rem; }
+    @media screen and (max-width: 1000px) {
+      .hero__greeting h1 {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 750px) {
+      .hero__greeting h1 {
+        padding-top: 15%;
+        font-size: 2rem; } }
+    @media screen and (max-width: 630px) {
+      .hero__greeting h1 {
+        font-size: 1.7rem; } }
+    @media screen and (max-height: 400px) {
+      .hero__greeting h1 {
+        font-size: 1.5rem; } }
   .hero__greeting h3 {
     font-size: 2rem;
     padding-top: 5%; }
+    @media screen and (max-width: 900px) {
+      .hero__greeting h3 {
+        font-size: 1.5rem; } }
+    @media screen and (max-height: 400px) {
+      .hero__greeting h3 {
+        font-size: 1rem; } }
   .hero__greeting a, .hero__greeting button {
     font-family: 'Open Sans', sans-serif; }
   .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -717,22 +766,30 @@ button {
     @media screen and (max-width: 700px) {
       .about__main {
         padding-top: 20%; } }
+    @media screen and (max-height: 400px) {
+      .about__main {
+        padding-top: 2%; } }
   .about__p {
     padding-top: 3%; }
     .about__p p {
       color: #eee5f1;
       line-height: 3rem;
       width: 90%; }
-    @media screen and (max-width: 530px) {
+      @media screen and (max-width: 550px) {
+        .about__p p {
+          line-height: 2.5rem; } }
+      @media screen and (max-width: 350px) {
+        .about__p p {
+          line-height: 2rem;
+          font-size: 1rem;
+          width: 85%; } }
+      @media screen and (max-height: 400px) {
+        .about__p p {
+          line-height: 1.8rem;
+          font-size: 1rem; } }
+    @media screen and (max-width: 550px) {
       .about__p {
-        font-size: 1.4rem; } }
-    @media screen and (min-width: 531px) {
-      .about__p {
-        font-size: 1.5rem; } }
-    @media screen and (min-width: 1600px) {
-      .about__p {
-        font-size: 3rem;
-        line-height: 6rem; } }
+        padding-top: 0; } }
   .about #fly {
     width: 200px;
     padding-left: 9px;
@@ -741,6 +798,15 @@ button {
       font-size: 1.7rem;
       position: relative;
       top: 5px; }
+      @media screen and (max-width: 800px) {
+        .about #fly i {
+          display: none; } }
+    @media screen and (max-width: 600px) {
+      .about #fly {
+        display: none; } }
+    @media screen and (max-width: 800px) {
+      .about #fly {
+        width: 125px; } }
   .about__buttons {
     display: flex;
     flex-direction: row;
@@ -764,6 +830,13 @@ footer {
   font-size: 1rem;
   width: 100%;
   text-align: center; }
+  @media screen and (max-width: 550px) {
+    footer {
+      font-size: 0.7rem; } }
+  @media screen and (max-height: 400px) {
+    footer {
+      font-size: 0.5rem;
+      padding: 0.3rem; } }
 
 .scroll-downs {
   position: absolute;
@@ -773,6 +846,9 @@ footer {
   z-index: 0;
   width: 34px;
   height: 55px; }
+  @media screen and (max-width: 800px) {
+    .scroll-downs {
+      display: none; } }
 
 .mousey {
   width: 3px;
@@ -802,7 +878,7 @@ footer {
     transform: translateY(15px);
     opacity: 0; } }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -812,7 +888,7 @@ footer {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -826,6 +902,9 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100%; }
+  @media screen and (max-width: 950px) {
+    .projects__links {
+      flex-wrap: wrap; } }
 
 .projects .project-div {
   display: flex;
@@ -835,6 +914,11 @@ footer {
   height: 60vh;
   width: 33.3333vw;
   transition: all .4s ease-in; }
+  @media screen and (max-width: 950px) {
+    .projects .project-div {
+      width: 100vw; } }
+  .projects .project-div img {
+    width: 100%; }
   .projects .project-div .project-logo {
     transition-timing-function: ease-in;
     transition: 0.5s;
@@ -861,9 +945,6 @@ footer {
 
 .projects .spacechat {
   background-color: #1b2735; }
-  .projects .spacechat img {
-    height: 42px;
-    width: 251px; }
 
 .projects .lingoly {
   background-color: #22874f; }
@@ -878,11 +959,17 @@ footer {
   align-self: flex-start;
   padding-left: 7%;
   width: 40%; }
+  @media screen and (max-width: 600px) {
+    .section-title {
+      width: 60%; } }
   .section-title h3 {
     font-size: 1rem; }
 
 .quote {
   width: 65%; }
+  @media screen and (max-width: 550px) {
+    .quote {
+      width: 75%; } }
   .quote h1 {
     border-left: 10px solid #979797;
     font-size: 3rem;
@@ -893,11 +980,28 @@ footer {
     font-weight: 400;
     letter-spacing: 2px;
     font-style: italic; }
+    @media screen and (max-width: 900px) {
+      .quote h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        border-left: 7px solid #979797; } }
+    @media screen and (max-width: 650px) {
+      .quote h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        border-left: 5px solid #979797;
+        padding-left: 0.5rem; } }
 
 .quote-name {
   padding-top: -10%; }
+  @media screen and (max-width: 900px) {
+    .quote-name {
+      font-size: 1rem; } }
+  @media screen and (max-width: 400px) {
+    .quote-name {
+      font-size: 0.7rem; } }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -917,6 +1021,15 @@ footer {
   margin-bottom: 1rem; }
   .hireme__available h1 .highlight-white {
     background: rgba(242, 127, 40, 0.6); }
+  @media screen and (max-width: 1100px) {
+    .hireme__available h1 {
+      font-size: 7rem; } }
+  @media screen and (max-width: 900px) {
+    .hireme__available h1 {
+      font-size: 4rem; } }
+  @media screen and (max-width: 500px) {
+    .hireme__available h1 {
+      font-size: 2.5rem; } }
 
 .hireme__job h3 {
   font-size: 2.5rem;
@@ -925,17 +1038,39 @@ footer {
   font-family: 'Lato', sans-serif;
   letter-spacing: 5px;
   font-weight: 300; }
+  @media screen and (max-width: 1100px) {
+    .hireme__job h3 {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 900px) {
+    .hireme__job h3 {
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: 400; } }
+  @media screen and (max-width: 450px) {
+    .hireme__job h3 {
+      width: 90%; } }
 
 .hireme__links {
   padding-top: 2rem; }
   .hireme__links-icon {
     padding-right: 5rem; }
+    @media screen and (max-width: 600px) {
+      .hireme__links-icon {
+        padding-right: 2rem; } }
   .hireme__links-icon:last-child {
     padding-right: 0; }
+  @media screen and (max-width: 900px) {
+    .hireme__links {
+      font-size: 1rem; } }
+  @media screen and (max-width: 600px) {
+    .hireme__links {
+      font-size: 0.5rem; } }
 
 .hireme__hello {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding: 2rem;
+  display: none; }
+  .hireme__hello img {
+    display: none; }
 
 .video-container {
   position: relative;
@@ -945,6 +1080,24 @@ footer {
   width: 100vw;
   overflow: hidden;
   background: #000; }
+  @media screen and (max-width: 1250px) {
+    .video-container {
+      height: 90vh; } }
+  @media screen and (max-width: 1100px) {
+    .video-container {
+      height: 86vh; } }
+  @media screen and (max-width: 950px) {
+    .video-container {
+      height: 75vh; } }
+  @media screen and (max-width: 880px) {
+    .video-container {
+      height: 68vh; } }
+  @media screen and (max-width: 680px) {
+    .video-container {
+      height: 60vh; } }
+  @media screen and (max-width: 550px) {
+    .video-container {
+      height: 50vh; } }
 
 @keyframes moveToRight {
   from {
@@ -974,8 +1127,14 @@ footer {
   top: 85%;
   height: 50px;
   width: 150px; }
+  @media screen and (max-width: 950px) {
+    #overlay {
+      top: 10px; } }
+  @media screen and (max-width: 880px) {
+    #overlay {
+      top: 2px; } }
 
-.hireme__links, .project-body__image, .project__links, .double-image {
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }

@@ -25,10 +25,20 @@ button {
         outline: none; 
     }
 
+    @media screen and (max-width: 800px) {
+        font-size: 1rem; 
+        width: 5em; 
+    }
+
 }
 
 .button-black {
      color: #333; 
      border-color: #333;
+
+     @media screen and (max-width: 800px) {
+        font-size: 1rem; 
+        width: 5em; 
+    }
 }
 

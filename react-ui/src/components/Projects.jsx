@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const Projects = () => {
     return (
@@ -10,13 +10,13 @@ const Projects = () => {
             </div>
 
             <div className="quote">
-                <ScrollAnimation animateIn="pulse" initiallyVisible={true}>
+                {/* <ScrollAnimation animateIn="pulse" initiallyVisible={true}> */}
                     <h1>
                         I didn't become a morning <br/>
                         person until I started doing <br/>
                         what I loved.
                     </h1>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </div>
 
             <div id="projects" className="quote-name">

@@ -1,9 +1,6 @@
 
 @import '../abstracts/variables'; 
 
-// $highlight-on-black: rgba(243, 89, 49, 0.8); 
-// $highlight-on-white: rgba(242, 127, 40, 0.6); 
-
 .hireme {
     @extend %flex-col-center;
 
@@ -22,10 +19,25 @@
             .highlight-white {
                 background: $highlight-on-white;
             }
+
+            @media screen and (max-width: 1100px) {
+                font-size: 7rem; 
+            }
+
+             @media screen and (max-width: 900px) {
+                font-size: 4rem; 
+            }
+
+             @media screen and (max-width: 500px) {
+                font-size: 2.5rem; 
+            }
+
+            
         }
     }
 
     &__job {
+        @extend %flex-row-center; 
 
         h3 {
             font-size: 2.5rem; 
@@ -34,6 +46,20 @@
             font-family: 'Lato', sans-serif;
             letter-spacing: 5px;
             font-weight: 300; 
+
+            @media screen and (max-width: 1100px) {
+                font-size: 1.5rem; 
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 1rem; 
+                line-height: 2rem; 
+                font-weight: 400; 
+            }
+
+             @media screen and (max-width: 450px) {
+                width: 90%; 
+            }
         }
     }
 
@@ -43,16 +69,33 @@
 
         &-icon {
             padding-right: 5rem; 
+
+            @media screen and (max-width: 600px) {
+                padding-right: 2rem;   
+            }
         }
 
         &-icon:last-child {
             padding-right: 0; 
         }
 
+        @media screen and (max-width: 900px) {
+            font-size: 1rem; 
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 0.5rem;  
+        }
+
     }
 
     &__hello {
-        padding-top: 2rem; 
-        padding-bottom: 2rem; 
+        padding: 2rem; 
+        @extend %flex-row-center;  
+        display: none; 
+
+        img {
+            display: none; //hello at keziyah dot com
+        }
     }
 }

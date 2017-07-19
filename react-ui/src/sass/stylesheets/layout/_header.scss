@@ -26,11 +26,26 @@
         display: flex; 
         flex-direction: row; 
         justify-content: space-around;
-        margin-left: 5%; 
+        padding-left: 5%; 
         width: 40%;  
         position: absolute; 
         top: 10px; 
-        left: 32em; 
+        right: 3em; 
+
+        @media screen and (max-width: 950px) {
+            right: 4em;
+             
+        }
+
+        @media screen and (max-width: 650px) {
+            // right: 4.5em;
+            top: 15px; 
+            width: 80%;  
+        }
+
+         @media screen and (max-width: 360px) {
+            padding-left: 9%;
+        }
 
         h3 {
             font-family: 'Lato', sans-serif; 
@@ -40,6 +55,10 @@
             text-transform: uppercase; 
             cursor: pointer; 
             transition: color .3s ease-in; 
+
+            @media screen and (max-width: 650px) {
+                font-size: 0.7rem; 
+            }
 
             &:hover {
                 color: $main-accent; 
@@ -54,6 +73,10 @@
         width: 150px; 
         height: 34.82px; 
         opacity: 0.8; 
+
+        @media screen and (max-width: 650px) {
+            display: none; 
+        }
     }
 
     &--background {  //header appearing on scroll up

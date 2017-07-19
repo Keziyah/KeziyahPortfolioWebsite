@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import Scroll from 'react-scroll'
 const Element = Scroll.Element
 
@@ -12,12 +12,12 @@ const HireMe = (props) => {
             </div>
 
             <div className="quote" id="contact">
-                <ScrollAnimation animateIn="pulse" initiallyVisible={true}>
+                {/* <ScrollAnimation animateIn="pulse" initiallyVisible={true}> */}
                     <h1>
                         I believe luck is preparation<br/>
                         meeting opportunity. <br/>
                     </h1>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </div>
 
             <div className="quote-name">
@@ -27,18 +27,16 @@ const HireMe = (props) => {
             </div>
 
            <div className="hireme__bottom">
-            <ScrollAnimation animateIn="zoomIn">
                     <div className="hireme__available">
                         <h1>I'm <span className="highlight">available</span></h1>
                     </div>
-            </ScrollAnimation>
 
-            <ScrollAnimation animateIn="slideInUp">
+            {/* <ScrollAnimation animateIn="slideInUp"> */}
                 <div className="hireme__job">
                     <h3>For a full time remote engineering role, <br/>
                     or front-end/full stack individual projects.</h3>
                 </div>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
 
             <div className="hireme__links">
                  <div className="hireme__links-icon">

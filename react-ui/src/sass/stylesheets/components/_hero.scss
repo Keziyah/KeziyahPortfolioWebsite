@@ -11,11 +11,7 @@
   flex-direction: column; 
   justify-content: center;
 }
-
-// $main-off-white:  #faebd7; 
-// $main-off-white: #eee5f1; 
-// $highlight-on-black: rgba(243, 89, 49, 1); //#f35931
-// $highlight-on-black: $main-accent; 
+ 
 $highlight-on-white: rgba(242, 127, 40, 0.6); 
 
 .hero {
@@ -41,12 +37,45 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
     padding-left: 10%;
     width: 80%;  
     color: $main-off-white; 
+
+    @media screen and (max-width: 600px) {
+        width: 85%; 
+    }
+
+    @media screen and (max-height: 400px) {
+            padding-top: 2%;  
+    } 
         h1 {
             font-size: 3.5rem; 
+
+            @media screen and (max-width: 1000px) {
+                font-size: 2.5rem; 
+            }
+
+            @media screen and (max-width: 750px) {
+                padding-top: 15%; 
+                font-size: 2rem; 
+            }
+
+            @media screen and (max-width: 630px) {
+                font-size: 1.7rem; 
+            }
+            
+            @media screen and (max-height: 400px) {
+                font-size: 1.5rem;   
+            }
         }  
         h3 {
             font-size: 2rem; 
             padding-top: 5%; 
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem; 
+            }
+
+            @media screen and (max-height: 400px) {
+                font-size: 1rem;   
+            }
         }
 
         a, button {
