@@ -1,4 +1,4 @@
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -412,7 +412,7 @@ template {
 [hidden] {
   display: none; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -520,7 +520,7 @@ body {
   position: absolute;
   width: 1px; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -584,7 +584,7 @@ body {
     transition: 0.3s;
     transform: translateY(-130%); }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -612,7 +612,7 @@ html, body {
 .page-content {
   animation: fade 0.5s ease-in-out; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -643,7 +643,7 @@ button {
   color: #333;
   border-color: #333; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -653,7 +653,7 @@ button {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -693,7 +693,7 @@ button {
   .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -802,7 +802,7 @@ footer {
     transform: translateY(15px);
     opacity: 0; } }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -812,7 +812,7 @@ footer {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -897,7 +897,7 @@ footer {
 .quote-name {
   padding-top: -10%; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -975,7 +975,7 @@ footer {
   height: 50px;
   width: 150px; }
 
-.hireme__links, .project__links {
+.hireme__links, .project-body__image, .project__links, .double-image {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -986,7 +986,8 @@ footer {
   justify-content: center; }
 
 .case-study {
-  padding-top: -70px; }
+  padding-top: -70px;
+  animation: fade 1s ease-out; }
 
 .header-project {
   background: #000;
@@ -1030,7 +1031,8 @@ footer {
   .project-hero h1 {
     font-size: 5rem;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 1rem; }
   .project-hero h5 {
     margin-bottom: 0; }
   .project-hero h4 {
@@ -1039,7 +1041,10 @@ footer {
     font-family: 'Lato', sans-serif; }
 
 .project-body {
-  width: 80%; }
+  width: 75%;
+  margin: auto; }
+  .project-body__image img {
+    max-width: 100%; }
 
 .project__links {
   padding-top: 2rem;

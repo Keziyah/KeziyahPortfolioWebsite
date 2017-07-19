@@ -23,16 +23,20 @@ const Lingoly = () => {
 
                 <p>
                     I was inspired by my experience as an ESL teacher to create Lingoly, my first (solo) 
-                    hackathon project -  an app that helps ESL students independently practice for speaking
+                    hackathon project. Lingoly helps ESL students independently practice for speaking
                     assignments. They can write speeches by talking, correct their grammar, and perfect their 
                     pronunciation with a pronunciation dictionary.               
                 </p>
 
+                 <div className="project-body__image">
+                    <img src="lingolyDesktop.png" alt="mockup of lingoly homepage on desktop"/>
+                </div>
+
                 <p>
                     Students can write by speaking using the Web Speech API, correct their grammar with 
                     LanguageTool.org’s API, and check their pronunciation using a Merriam Webster API. 
-                    The app uses Redux to manage state, React to render the views, and PostgreSQL to let
-                    students save their speeches.  
+                    The app uses Redux to manage state, React to render the views, and PostgreSQL to allow
+                    students to save their speeches.  
                 </p>
 
             </div>
@@ -42,13 +46,13 @@ const Lingoly = () => {
                 <div className="project__links">
 
                             <div className="project__links-icon">
-                                <a href="https://github.com/keziyah/lingoly">
+                                <a href="http://github.com/keziyah/lingoly" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-github fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
 
                             <div className="project__links-icon">
-                                <a href="https://www.youtube.com/watch?v=0DvmqlenAXI">
+                                <a href="http://www.youtube.com/watch?v=0DvmqlenAXI" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-youtube-square fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>

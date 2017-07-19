@@ -42,19 +42,19 @@ const HireMe = (props) => {
 
             <div className="hireme__links">
                  <div className="hireme__links-icon">
-                                <a href="https://www.linkedin.com/in/keziyah/">
+                                <a href="http://www.linkedin.com/in/keziyah/" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-linkedin fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
 
                             <div className="hireme__links-icon">
-                                <a href="https://github.com/Keziyah/">
+                                <a href="http://github.com/Keziyah/" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-github fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
 
                             <div className="hireme__links-icon">
-                                <a href="https://twitter.com/KeziyahL">
+                                <a href="http://twitter.com/KeziyahL" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-twitter fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>

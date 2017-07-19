@@ -20,7 +20,7 @@ const Life = () => {
                     for services.      
                 </p>
 
-                <p>
+                {/* <p>
                     I was inspired by my experience as an ESL teacher to create Lingoly, my first (solo) 
                     hackathon project -  an app that helps ESL students independently practice for speaking
                     assignments. They can write speeches by talking, correct their grammar, and perfect their 
@@ -41,18 +41,18 @@ const Life = () => {
                 <div className="project__links">
 
                             <div className="project__links-icon">
-                                <a href="https://github.com/keziyah/lingoly">
+                                <a href="https://github.com/keziyah/lingoly" target="_blank">
                                     <i className="fa fa-github fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
 
                             <div className="project__links-icon">
-                                <a href="https://www.youtube.com/watch?v=0DvmqlenAXI">
+                                <a href="https://www.youtube.com/watch?v=0DvmqlenAXI" target="_blank">
                                     <i className="fa fa-youtube-square fa-5x" aria-hidden="true"></i>
                                 </a>
                             </div>
 
-                </div>
+                </div> */}
             </div>
             <footer> &copy; Keziyah Lewis 2017.</footer>
         </div>

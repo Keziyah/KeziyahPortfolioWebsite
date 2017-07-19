@@ -2,7 +2,8 @@
 
 .case-study {
     @extend %flex-col-center;
-    padding-top: -70px;  
+    padding-top: -70px; 
+    animation: fade 1s ease-out;  
 }
 
 .header-project {
@@ -59,6 +60,7 @@
         font-size: 5rem; 
         font-family: 'Lato', sans-serif; 
         margin-bottom: 0; 
+        margin-top: 1rem; 
     }
 
     h5 {
@@ -73,8 +75,17 @@
 }
 
 .project-body {
-    width: 80%; 
+    // width: 80%; 
     // font-family: 'Noto Serif', serif; 
+    width: 75%; 
+    margin: auto; 
+    &__image {
+        @extend %flex-row-center;
+        
+        img {
+            max-width: 100%; 
+        }
+    }
 }
 
 .project__links {
@@ -93,4 +104,9 @@
 
 .project-contact {
     text-align: center; 
+}
+
+.double-image {
+    @extend %flex-row-center; 
+    // flex-wrap: wrap; 
 }
