@@ -8,11 +8,11 @@ const Hero = (props) => {
         <div className="hero">
 
             <div className="hero__greeting">
-                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible="true">
+                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}>
                     <h1>Hi. I'm Keziyah, a full stack <br /> software engineer.</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible="true">
+                <ScrollAnimation animateOut="fadeOutLeft" initiallyVisible={true}>
                     <h3>I build <em>experiences</em>. <span className="highlight">Let me build yours.</span></h3>
                 </ScrollAnimation>
                 

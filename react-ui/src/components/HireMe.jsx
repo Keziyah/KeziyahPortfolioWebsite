@@ -11,8 +11,8 @@ const HireMe = (props) => {
                 <h3>Hire Me</h3>
             </div>
 
-            <div className="quote">
-                <ScrollAnimation animateIn="pulse" initiallyVisible="true">
+            <div className="quote" id="contact">
+                <ScrollAnimation animateIn="pulse" initiallyVisible={true}>
                     <h1>
                         I believe luck is preparation<br/>
                         meeting opportunity. <br/>

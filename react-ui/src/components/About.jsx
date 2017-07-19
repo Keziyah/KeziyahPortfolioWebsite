@@ -6,7 +6,7 @@ const Element = Scroll.Element
 
 const About = (props) => {
     return (
-        <div className="section about">
+        <div className="section about" id="about">
             <Element name="about">
             <div className="about__main">
                         <div className="about__p">

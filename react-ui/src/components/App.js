@@ -9,7 +9,7 @@ import Video from './Video'
 import '../sass/stylesheets/main.css'
 
 const Element = Scroll.Element
-const Events = Scroll.Events
+// const Events = Scroll.Events
 const scroll = Scroll.animateScroll
 const scrollSpy = Scroll.scrollSpy
 
@@ -46,23 +46,22 @@ class App extends Component {
     }   
 
     componentDidMount() {
-        Events.scrollEvent.register('begin', function(to, element) {
-            console.log("begin", arguments)
-        });
+        // Events.scrollEvent.register('begin', function(to, element) {
+        //     console.log("begin", arguments)
+        // });
     
-        Events.scrollEvent.register('end', function(to, element) {
-            console.log("end", arguments)
-        });
+        // Events.scrollEvent.register('end', function(to, element) {
+        //     console.log("end", arguments)
+        // });
  
         scrollSpy.update()
-
         window.addEventListener('scroll', this.runOnScroll)
     }
 
     componentWillUnmount() {
-        Events.scrollEvent.remove('begin')
-        Events.scrollEvent.remove('end')
-        // window.removeEventListener('scroll')
+        // Events.scrollEvent.remove('begin')
+        // Events.scrollEvent.remove('end')
+        window.removeEventListener('scroll', this.runOnScroll)
     }
 
     handleBurgerClick() {
@@ -80,12 +79,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className="container" onScroll={console.log(window.scrollY)}>
+            <div className="container">
                 <Header open={this.state.open} handleClick={this.handleBurgerClick} headerClass={this.state.headerClass}/>
-                
-                {/* <div className="menu" style={{display: this.state.open ? "" : "none"}}>
-                    <Menu open={this.state.open}/>
-                </div> */}
 
                 <div className="page-content">
                     

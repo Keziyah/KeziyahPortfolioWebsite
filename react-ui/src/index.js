@@ -8,6 +8,10 @@ import {
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 
+import Spacechat from './components/Spacechat'
+import Lingoly from './components/Lingoly'
+import Covfefe from './components/Covfefe'
+// import Life from './components/Life'
 
 
 import { Provider } from 'react-redux'
@@ -30,6 +34,10 @@ ReactDOM.render(
         <Router onUpdate={logPageView}>
             <div>
                 <Route exact path="/" component={App} />
+                <Route exact path="/spacechat" component={Spacechat} />
+                <Route exact path="/lingoly" component={Lingoly} />
+                <Route exact path="/covfefe" component={Covfefe} />
+                {/* <Route exact path="/life" component={Life} /> */}
             </div>
         </Router>
     </Provider>,
