@@ -22,7 +22,7 @@ const Spacechat = () => {
                 </p>
 
                 <p>
-                    Spacechat allows users to chatwith each other in real time by 
+                    Spacechat allows users to chat with each other in real time by 
                     speaking through virtual words. What a user said is translated into 
                     their partner’s language, while the sentiment, personality, and emotional
                     analysis of the conversation is used to animate the scenes.             
