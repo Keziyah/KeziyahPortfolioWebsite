@@ -32,7 +32,7 @@ const Header = (props) => {
                         smooth={"easeOutCubic"} 
                         duration={600}
                         offset={-100}>
-                    <h3>Contact</h3>
+                    <h3>Contact Me</h3>
                     </Link>
 
                     <Link activeClass="active"

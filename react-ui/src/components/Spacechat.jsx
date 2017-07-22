@@ -2,6 +2,7 @@ import React from 'react'
 import CaseHeader from './CaseHeader'
 
 const Spacechat = () => {
+    window.scrollTo(0, 0)
     return (
         <div className="spacechat case-study">
              <CaseHeader />

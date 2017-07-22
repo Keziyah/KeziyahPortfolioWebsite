@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Route} from 'react-router-dom'
 import Scroll from 'react-scroll'
 import Header from './Header'
 import Hero from './Hero'
@@ -12,6 +13,23 @@ const Element = Scroll.Element
 // const Events = Scroll.Events
 const scroll = Scroll.animateScroll
 const scrollSpy = Scroll.scrollSpy
+
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    //   console.log(this.props.location, this.prevProps.location)
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
+  }
+
+  render() {
+    return null
+  }
+}
+
+const ScrollToTopOnNav = () => (
+  <Route component={ScrollToTop}/>
+)
 
 class App extends Component {
     constructor() {
@@ -77,9 +95,16 @@ class App extends Component {
         this.setState({showVid: !this.state.showVid})
     }
 
+    componentWillUpdate() {
+        console.log(this.props.location,"locationds" )
+        
+    }
+
     render() {
+
         return (
             <div className="container">
+                <ScrollToTopOnNav />
                 <Header open={this.state.open} handleClick={this.handleBurgerClick} headerClass={this.state.headerClass}/>
 
                 <div className="page-content">

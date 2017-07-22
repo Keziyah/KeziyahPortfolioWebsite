@@ -28,13 +28,12 @@ const HireMe = (props) => {
 
            <div className="hireme__bottom">
                     <div className="hireme__available">
-                        <h1>I'm <span className="highlight">available</span></h1>
+                        <h1>Get in <span className="highlight">touch</span></h1>
                     </div>
 
             {/* <ScrollAnimation animateIn="slideInUp"> */}
                 <div className="hireme__job">
-                    <h3>For a full time remote engineering role, <br/>
-                    or front-end/full stack individual projects.</h3>
+                    <h3>If you have an interesting project, a full time<br/> remote engineering role, or just want to<br/> connect, feel free to say hello.</h3>
                 </div>
             {/* </ScrollAnimation> */}
 

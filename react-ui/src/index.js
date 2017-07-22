@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
 import {
   BrowserRouter as Router,
-  Route
+  Route, Switch
 } from 'react-router-dom'
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
@@ -12,6 +12,7 @@ import Spacechat from './components/Spacechat'
 import Lingoly from './components/Lingoly'
 import Covfefe from './components/Covfefe'
 // import Life from './components/Life'
+import NoMatch from './components/NoMatch'
 
 
 import { Provider } from 'react-redux'
@@ -31,13 +32,16 @@ function logPageView() {
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router onUpdate={logPageView}>
+        <Router onUpdate={logPageView} >
             <div>
-                <Route exact path="/" component={App} />
-                <Route exact path="/spacechat" component={Spacechat} />
-                <Route exact path="/lingoly" component={Lingoly} />
-                <Route exact path="/covfefe" component={Covfefe} />
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    <Route path="/spacechat" component={Spacechat} />
+                    <Route path="/lingoly" component={Lingoly} />
+                    <Route path="/covfefe" component={Covfefe} /> 
+                    <Route component={NoMatch} />
                 {/* <Route exact path="/life" component={Life} /> */}
+                </Switch>
             </div>
         </Router>
     </Provider>,
