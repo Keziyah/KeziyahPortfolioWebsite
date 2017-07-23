@@ -655,8 +655,7 @@ button {
   transition: all .3s ease-in; }
   button:hover {
     color: #cb4f2f;
-    border: 3px solid #cb4f2f;
-    color: red; }
+    border: 3px solid #cb4f2f; }
   button:focus {
     outline: none; }
   @media screen and (max-width: 800px) {
