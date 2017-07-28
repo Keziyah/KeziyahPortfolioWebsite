@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
-    "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hamburger-menu": "0.0.4",
@@ -16,21 +15,9 @@
     "react-scripts": "^1.0.5"
   },
   "scripts": {
-      "build-css": "node-sass-chokidar src/ -o src/",
-      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-      "start-js": "react-scripts start",
-      "start": "npm-run-all -p watch-css start-js",
-      "build": "npm run build-css && react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
-  } 
-  // "browserslist": {
-  //   "production": [
-  //     "last 2 version",
-  //     "ie 9"
-  //   ],
-  //   "development": [
-  //     "last 1 version"
-  //   ]
-  // }
+    "start": "react-scripts-with-sass start",
+    "build": "react-scripts-with-sass build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
