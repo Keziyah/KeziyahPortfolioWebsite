@@ -64,16 +64,12 @@
     margin: auto; 
     &__image {
         @extend %flex-row-center;
-
-        img {
-            max-width: 800px; 
+        
+        @media screen and (min-width: 600px) {
+            height: 70%; 
+            width: 70%; 
+            margin: 0 auto; 
         }
-        //This ruins things up in Firefox
-        // @media screen and (min-width: 600px) {
-        //     height: 70%; 
-        //     width: 70%; 
-        //     margin: 0 auto; 
-        // }
     }
 }
 
