@@ -37,7 +37,5 @@
     "react"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "react-scripts": "^1.0.10"
-  }
+  "devDependencies": {}
 }
