@@ -1192,8 +1192,11 @@ footer {
 .project-body {
   width: 75%;
   margin: auto; }
-  .project-body__image img {
-    max-width: 800px; }
+  @media screen and (min-width: 600px) {
+    .project-body__image {
+      height: 70%;
+      width: 70%;
+      margin: 0 auto; } }
 
 .project__links {
   padding-top: 2rem;
