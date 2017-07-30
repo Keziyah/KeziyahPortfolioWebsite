@@ -5,6 +5,7 @@
     flex-direction: row;
     position: fixed; 
     top: 0; 
+    left: 0; //need this for safari apparently
     width: 100%;
     height: 70px;
     z-index: 6; 

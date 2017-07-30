@@ -1,12 +1,13 @@
 import React from 'react'
 import HamburgerMenu from 'react-hamburger-menu'; 
 import Scroll from 'react-scroll'
+import {Link as ReactLink} from 'react-router-dom'
 const Link = Scroll.Link
 
 const Header = (props) => {
     return (
         <div className={props.headerClass + " header"}>
-            <img src="mylogo.png" alt="my logo"/>
+            <ReactLink to="/"><img src="mylogo.png" alt="my logo"/></ReactLink>
    
                 <nav className={props.open ? "open nav" : "closed nav"}>
 

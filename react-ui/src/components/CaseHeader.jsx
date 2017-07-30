@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom'
 const CaseHeader = () => {
     return (
         <div className="header-project header">
-                <img src="mylogo.png" alt="my logo"/>
+            <Link to="/"><img src="mylogo.png" alt="my logo"/></Link>
+
     
                     <nav>
 
