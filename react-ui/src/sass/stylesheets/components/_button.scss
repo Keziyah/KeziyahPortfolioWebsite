@@ -30,6 +30,11 @@ button {
         width: 5em; 
     }
 
+     @media screen and (max-height: 400px) {
+        font-size: 1rem; 
+        width: 5em; 
+    }
+
 }
 
 .button-black {

@@ -13,6 +13,10 @@
   @media screen and (max-width: 800px) {
     display: none; 
   }
+
+  @media screen and (max-height: 600px) {
+    display: none; 
+  }
 }
 .mousey {
   width: 3px;

@@ -78,6 +78,10 @@
         @media screen and (max-width: 650px) {
             display: none; 
         }
+
+        @media screen and (max-height: 400px) {
+            display: none; 
+        }
     }
 
     &--background {  //header appearing on scroll up

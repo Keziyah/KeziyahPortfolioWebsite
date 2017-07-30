@@ -35,7 +35,7 @@ const About = (props) => {
             </div>
             </Element>
 
-            <footer> &copy; Keziyah Lewis 2017.</footer>
+            <footer> <p>&copy; Keziyah Lewis 2017.</p></footer>
         </div>
     )
 }

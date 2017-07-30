@@ -16,6 +16,7 @@ const Hero = (props) => {
                     <h3>I build <em>experiences</em>. <span className="highlight">Let me build yours.</span></h3>
                 {/* </ScrollAnimation> */}
                 
+            <div className="hero__lower">
                 <div className="hero__buttons">
                     <Link activeClass="active"
                      to="projects" 
@@ -39,6 +40,7 @@ const Hero = (props) => {
                 <div className="mousey">
                     <div className="scroller"></div>
                 </div>
+            </div>
             </div>
         </div>
     )
