@@ -18,14 +18,14 @@ const About = (props) => {
                         <div className="about__buttons">
                           
                                 <button>
-                                    <Link activeClass="active"
+                                    {/* <Link activeClass="active"
                                         to="contact" 
                                         spy={true}
                                         smooth={"easeOutCubic"} 
                                         duration={600}
-                                        offset={-100}>
-                                    Contact
-                                    </Link>
+                                        offset={-100}> */}
+                                    My Story
+                                    {/* </Link> */}
                                 </button>
                             
 

@@ -696,7 +696,8 @@ button {
   background-image: url("hero.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: auto; }
 
 .hero__burger {
   position: fixed;
@@ -918,7 +919,8 @@ footer {
   align-items: center;
   height: 60vh;
   width: 33.3333vw;
-  transition: all .4s ease-in; }
+  transition: all .4s ease-in;
+  overflow: auto; }
   @media screen and (max-width: 950px) {
     .projects .project-div {
       width: 100vw; } }

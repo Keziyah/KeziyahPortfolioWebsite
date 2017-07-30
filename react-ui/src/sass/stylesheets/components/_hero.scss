@@ -19,6 +19,7 @@ $highlight-on-white: rgba(242, 127, 40, 0.6);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    overflow: auto; //so the buttons don't spill out when the height gets smaller
 }
 
 .hero__burger {

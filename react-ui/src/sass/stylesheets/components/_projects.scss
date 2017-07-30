@@ -32,6 +32,7 @@
         height: 60vh; 
         width: 33.3333vw; 
         transition: all .4s ease-in; 
+        overflow: auto; 
 
         @media screen and (max-width: 950px) {
             width: 100vw; 
