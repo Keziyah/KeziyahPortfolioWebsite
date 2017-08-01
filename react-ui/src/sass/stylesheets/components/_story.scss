@@ -1,7 +1,8 @@
 @import '../abstracts/variables'; 
 
 .myStory {
-    min-height: 100vh; 
+    min-height: 95vh; 
+    animation: fade 1s ease-out;
 
     &__paragraph {
         // text-align: center; 

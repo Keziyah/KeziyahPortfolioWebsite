@@ -32,6 +32,14 @@
             line-height: 3rem;
             width: 90%;
 
+            a {
+                color: $main-off-white; 
+
+                &:hover {
+                    color: $main-accent; 
+                }
+            }
+
             @media screen and (max-width: 550px) {
                 line-height: 2.5rem; 
             }
@@ -97,30 +105,30 @@
 
 }
 
-footer {
-    right: 0;
-    bottom: 0;
-    left: 0;
-    // padding-top: 0.5rem;
-    height: 5vh; 
-    background: rgba(20, 20, 20, 0.5); 
-    color: $main-off-white; 
-    font-size: 1rem;
-    width: 100%; 
-    text-align: center;
+// footer {
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     // padding-top: 0.5rem;
+//     height: 5vh; 
+//     background: rgba(20, 20, 20, 0.5); 
+//     color: $main-off-white; 
+//     font-size: 1rem;
+//     width: 100%; 
+//     text-align: center;
 
-    p {
-        margin: 0; 
-        height: 100%; 
-        padding-top: 0.3rem; 
-    }
+//     p {
+//         margin: 0; 
+//         height: 100%; 
+//         padding-top: 0.3rem; 
+//     }
     
-    @media screen and (max-width: 550px) {
-        font-size: 0.7rem; 
-    }
+//     @media screen and (max-width: 550px) {
+//         font-size: 0.7rem; 
+//     }
 
-      @media screen and (max-height: 400px) {
-        font-size: 0.5rem; 
-        padding: 0.3rem;  
-    }
-}
+//       @media screen and (max-height: 400px) {
+//         font-size: 0.5rem; 
+//         padding: 0.3rem;  
+//     }
+// }

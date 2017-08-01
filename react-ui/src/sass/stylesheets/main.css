@@ -611,6 +611,28 @@ body {
     transition: 0.3s;
     transform: translateY(-130%); }
 
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 5vh;
+  background: rgba(20, 20, 20, 0.5);
+  color: #eee5f1;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center; }
+  footer p {
+    margin: 0;
+    height: 100%;
+    padding-top: 0.3rem; }
+  @media screen and (max-width: 550px) {
+    footer {
+      font-size: 0.7rem; } }
+  @media screen and (max-height: 400px) {
+    footer {
+      font-size: 0.5rem;
+      padding: 0.3rem; } }
+
 .hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
@@ -791,6 +813,10 @@ button {
       color: #eee5f1;
       line-height: 3rem;
       width: 90%; }
+      .about__p p a {
+        color: #eee5f1; }
+        .about__p p a:hover {
+          color: #cb4f2f; }
       @media screen and (max-width: 550px) {
         .about__p p {
           line-height: 2.5rem; } }
@@ -834,28 +860,6 @@ button {
       width: 200px; }
       .about__buttons a:hover {
         color: #cb4f2f; }
-
-footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 5vh;
-  background: rgba(20, 20, 20, 0.5);
-  color: #eee5f1;
-  font-size: 1rem;
-  width: 100%;
-  text-align: center; }
-  footer p {
-    margin: 0;
-    height: 100%;
-    padding-top: 0.3rem; }
-  @media screen and (max-width: 550px) {
-    footer {
-      font-size: 0.7rem; } }
-  @media screen and (max-height: 400px) {
-    footer {
-      font-size: 0.5rem;
-      padding: 0.3rem; } }
 
 .scroll-downs {
   position: absolute;
@@ -1242,7 +1246,8 @@ footer {
   justify-content: center; }
 
 .myStory {
-  min-height: 100vh; }
+  min-height: 95vh;
+  animation: fade 1s ease-out; }
   .myStory__paragraph {
     margin: 0 8rem; }
     @media screen and (max-width: 600px) {

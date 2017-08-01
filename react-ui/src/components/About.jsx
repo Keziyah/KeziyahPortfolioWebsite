@@ -12,23 +12,12 @@ const About = (props) => {
             <div className="about__main">
                         <div className="about__p">
                             <p>I’m Keziyah, a teacher, traveler, and <span className="highlight">full stack software engineer</span> based in Central Florida.  
-                            I use JavaScript frameworks to create responsive websites and interactive <span className="highlight">web and mobile apps.</span> When I'm not coding, I love to travel and watch telenovelas. Feel free to say hi.
+                            I use JavaScript frameworks to create responsive websites and interactive <span className="highlight">web and mobile apps.</span> When I'm not coding, I love to travel and watch telenovelas. Feel free to say hi, or read more 
+                            about me <Link to="/story">here</Link>.
                             </p>
                         </div>
 
                         <div className="about__buttons">
-                          
-                                <button>
-                                    {/* <Link activeClass="active"
-                                        to="contact" 
-                                        spy={true}
-                                        smooth={"easeOutCubic"} 
-                                        duration={600}
-                                        offset={-100}> */}
-                                    <Link to="/story">My Story</Link>
-                                    {/* </Link> */}
-                                </button>
-                            
 
                             <button id="fly" onClick={props.toggleVid}>Watch me fly <i className="material-icons">play_arrow</i></button>
 

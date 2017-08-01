@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 const MyStory = () => {
     return (
+        <div>
         <div className="myStory">
             <CaseHeader />
             <div className="myStory__paragraph">
@@ -36,7 +37,8 @@ const MyStory = () => {
 
                 {/* <button><a href="/#about">Back</a></button> */}
             </div>
-            <footer> &copy; Keziyah Lewis 2017.</footer>
+        </div>
+        <footer> &copy; Keziyah Lewis 2017.</footer>
         </div>
     )
 }
