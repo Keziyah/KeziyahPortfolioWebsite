@@ -3,6 +3,7 @@ import CaseHeader from './CaseHeader'
 import {Link} from 'react-router-dom'
 
 const MyStory = () => {
+    window.scrollTo(0, 0)
     return (
         <div>
         <div className="myStory">
