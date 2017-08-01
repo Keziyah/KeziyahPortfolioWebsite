@@ -755,9 +755,6 @@ button {
   .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
-.hero__lower {
-  overflow: auto; }
-
 .hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
