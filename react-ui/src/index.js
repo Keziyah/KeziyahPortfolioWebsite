@@ -13,6 +13,7 @@ import Lingoly from './components/Lingoly'
 import Covfefe from './components/Covfefe'
 // import Life from './components/Life'
 import NoMatch from './components/NoMatch'
+import MyStory from './components/MyStory'
 
 
 import { Provider } from 'react-redux'
@@ -39,6 +40,7 @@ ReactDOM.render(
                     <Route path="/spacechat" component={Spacechat} />
                     <Route path="/lingoly" component={Lingoly} />
                     <Route path="/covfefe" component={Covfefe} /> 
+                    <Route path="/story" component={MyStory} />
                     <Route component={NoMatch} />
                 {/* <Route exact path="/life" component={Life} /> */}
                 </Switch>

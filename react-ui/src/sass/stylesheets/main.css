@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -417,7 +417,7 @@ template {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -458,6 +458,9 @@ a {
   transition: all .2s ease-in; }
   a:hover {
     color: #cb4f2f; }
+
+p a {
+  text-decoration: underline; }
 
 * {
   font-family: 'Open Sans', sans-serif; }
@@ -529,7 +532,7 @@ body {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -613,7 +616,7 @@ body {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -641,7 +644,7 @@ html, body {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -684,7 +687,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -694,7 +697,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -760,7 +763,7 @@ button {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -902,7 +905,7 @@ footer {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -912,7 +915,7 @@ footer {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -1026,7 +1029,7 @@ footer {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -1159,7 +1162,7 @@ footer {
   flex-direction: row;
   justify-content: center; }
 
-.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero {
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -1227,3 +1230,21 @@ footer {
 
 .project-contact {
   text-align: center; }
+
+.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about__p, .projects, .hireme, .hireme__bottom, .case-study, .project-hero, .myStory__paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.myStory__paragraph {
+  margin: 0 8rem; }
+  @media screen and (max-width: 600px) {
+    .myStory__paragraph {
+      margin: 0 3rem; } }
+  .myStory__paragraph p {
+    font-size: 0.8em; }

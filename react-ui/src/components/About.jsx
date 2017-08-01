@@ -1,6 +1,7 @@
 import React from 'react'
 import Scroll from 'react-scroll'
-const Link = Scroll.Link
+// const Link = Scroll.Link
+import {Link} from 'react-router-dom'
 const Element = Scroll.Element
 
 
@@ -24,7 +25,7 @@ const About = (props) => {
                                         smooth={"easeOutCubic"} 
                                         duration={600}
                                         offset={-100}> */}
-                                    My Story
+                                    <Link to="/story">My Story</Link>
                                     {/* </Link> */}
                                 </button>
                             
