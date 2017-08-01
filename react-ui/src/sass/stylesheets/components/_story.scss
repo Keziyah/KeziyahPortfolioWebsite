@@ -1,6 +1,7 @@
 @import '../abstracts/variables'; 
 
 .myStory {
+    min-height: 100vh; 
 
     &__paragraph {
         // text-align: center; 

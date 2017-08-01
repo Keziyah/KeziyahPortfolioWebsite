@@ -1241,10 +1241,12 @@ footer {
   flex-direction: column;
   justify-content: center; }
 
-.myStory__paragraph {
-  margin: 0 8rem; }
-  @media screen and (max-width: 600px) {
-    .myStory__paragraph {
-      margin: 0 3rem; } }
-  .myStory__paragraph p {
-    font-size: 0.8em; }
+.myStory {
+  min-height: 100vh; }
+  .myStory__paragraph {
+    margin: 0 8rem; }
+    @media screen and (max-width: 600px) {
+      .myStory__paragraph {
+        margin: 0 3rem; } }
+    .myStory__paragraph p {
+      font-size: 0.8em; }
