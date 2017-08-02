@@ -1178,9 +1178,8 @@ button {
 .header-project {
   background: #000;
   color: #eee5f1 !important;
-  position: static; }
-  .header-project nav {
-    z-index: 5; }
+  position: static;
+  transform: translateZ(0); }
 
 .project-hero {
   box-shadow: 0 2px 2px -2px gray;

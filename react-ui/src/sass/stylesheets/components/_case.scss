@@ -11,10 +11,7 @@
     background: #000; 
     color: $main-off-white !important; 
     position: static; 
-
-    nav {
-        z-index: 5; ///the nav dissapears on IE for some reason
-    }
+    transform: translateZ(0); //fix for IE disappearing nav links
 }
 
 .project-hero {

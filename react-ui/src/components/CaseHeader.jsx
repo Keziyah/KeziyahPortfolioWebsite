@@ -18,6 +18,7 @@ const CaseHeader = () => {
                         <a href="/#about"><h3>About</h3></a>
 
                     </nav>
+                    <div></div>
             </div>
     )
 }
