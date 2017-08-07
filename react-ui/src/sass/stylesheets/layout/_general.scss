@@ -16,6 +16,25 @@ html, body {
   margin: 0; 
 }
 
+.ie {
+  display: none !important; 
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .container {
+     display: none !important; 
+   }
+
+   .ie {
+     display: block !important; 
+     padding: 0 10%; 
+
+     a {
+       text-decoration: underline; 
+     }
+   }
+}
+
 // body {
 //   padding-top: -70px; 
 // }

@@ -12,7 +12,7 @@
 }
 
 .projects {
-    @extend %flex-col-center;  
+    @extend %flex-col-center; 
 
     &__links {
         display: flex; 

@@ -2,7 +2,11 @@
 
 .myStory {
     min-height: 95vh; 
+    // height: 95vh; 
     animation: fade 1s ease-out;
+    // -ms-flex-align:center;
+    display: flex; 
+    flex-direction: column; 
 
     &__paragraph {
         // text-align: center; 
@@ -15,6 +19,7 @@
 
         p {
             font-size: 0.8em; 
+            max-width: 100%; //Needed for IE11; 
         }
     }
 }

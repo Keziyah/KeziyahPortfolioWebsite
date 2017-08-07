@@ -78,8 +78,15 @@ class App extends Component {
     }
 
     render() {
+        console.log("WIDTH", window.innerWidth); 
 
         return (
+        <div>
+            <div className="ie">
+                    <h2>Hi, welcome to <a href="http://github.com/keziyah" target="_blank" rel="noopener noreferrer">Keziyah's</a> portfolio site.<br/>
+                    For a better experience, please
+                    use a differnent browser, such as Chrome, Edge, Safari, Firefox, or Opera. </h2>
+            </div>
             <div className="container">
                 <Header open={this.state.open} handleClick={this.handleBurgerClick} headerClass={this.state.headerClass}/>
 
@@ -100,6 +107,7 @@ class App extends Component {
                     }
                 </div>
             </div>
+        </div>
         )
     }
 }
