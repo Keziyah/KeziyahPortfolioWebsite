@@ -18,6 +18,9 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="IEonly.css" />
+    <![endif]-->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
@@ -36,22 +39,6 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root">
-      <!--[if IE]>
-<style>
-    .container {
-     display: none !important; 
-   }
-
-   .ie {
-     display: block !important; 
-     padding: 0 10%; 
-
-     a {
-       text-decoration: underline; 
-     }
-   }
-</style>
-<![endif]-->
     </div>
     <!--
       This HTML file is a template.
