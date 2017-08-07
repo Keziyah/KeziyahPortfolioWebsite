@@ -21,18 +21,18 @@ html, body {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   .container {
-     display: none !important; 
-   }
+  //  .container {
+  //    display: none !important; 
+  //  }
 
-   .ie {
-     display: block !important; 
-     padding: 0 10%; 
+  //  .ie {
+  //    display: block !important; 
+  //    padding: 0 10%; 
 
-     a {
-       text-decoration: underline; 
-     }
-   }
+  //    a {
+  //      text-decoration: underline; 
+  //    }
+  //  }
 }
 
 // body {
