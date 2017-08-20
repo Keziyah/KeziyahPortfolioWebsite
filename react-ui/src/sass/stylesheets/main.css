@@ -1,4 +1,4 @@
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -412,7 +412,7 @@ template {
 [hidden] {
   display: none; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -527,7 +527,7 @@ body {
   position: absolute;
   width: 1px; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -633,7 +633,7 @@ footer {
       font-size: 0.5rem;
       padding: 0.3rem; } }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -673,7 +673,7 @@ html, body {
 .page-content {
   animation: fade 0.5s ease-in-out; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -716,7 +716,7 @@ button {
       font-size: 1rem;
       width: 5em; } }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -726,7 +726,7 @@ button {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -792,7 +792,7 @@ button {
   .hero__greeting a:nth-child(2) {
     margin-left: 20px; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -916,7 +916,7 @@ button {
     transform: translateY(15px);
     opacity: 0; } }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -926,7 +926,7 @@ button {
   flex-direction: column;
   justify-content: center; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -1040,7 +1040,7 @@ button {
     .quote-name {
       font-size: 0.7rem; } }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -1090,12 +1090,13 @@ button {
       width: 90%; } }
 
 .hireme__links {
-  padding-top: 2rem; }
+  padding: 2rem 0; }
   .hireme__links-icon {
-    padding-right: 5rem; }
+    width: 150px;
+    text-align: center; }
     @media screen and (max-width: 600px) {
       .hireme__links-icon {
-        padding-right: 2rem; } }
+        width: 70px; } }
   .hireme__links-icon:last-child {
     padding-right: 0; }
   @media screen and (max-width: 900px) {
@@ -1105,20 +1106,9 @@ button {
     .hireme__links {
       font-size: 0.5rem; } }
 
-.hireme__hello {
-  padding: 2rem;
-  display: none; }
-  .hireme__hello img {
-    display: none; }
-
 #email {
   visibility: hidden;
-  margin: 0;
-  position: relative;
-  right: 2.3rem; }
-  @media screen and (max-width: 600px) {
-    #email {
-      right: 1rem; } }
+  margin: 0; }
 
 #email-icon:hover #email {
   animation: fade 1s ease-out;
@@ -1186,7 +1176,7 @@ button {
     #overlay {
       top: 2px; } }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -1261,7 +1251,7 @@ button {
 .project-contact {
   text-align: center; }
 
-.hireme__job, .hireme__links, .hireme__hello, .project-body__image, .project__links {
+.hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;
   justify-content: center; }

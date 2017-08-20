@@ -63,10 +63,6 @@ const HireMe = (props) => {
                                 <p id="email">hello@keziyah.com</p>
                             </div>
                         </div>
-                            
-                            <div className="hireme__hello">
-                                <img src="hello.png" alt="hello at keziyah dot com" />
-                            </div>
                         </div>
                     </div>
     )
