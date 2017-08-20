@@ -56,10 +56,11 @@ const HireMe = (props) => {
                                 </a>
                             </div>
 
-                            <div className="hireme__links-icon">
+                            <div className="hireme__links-icon" id="email-icon">
                                 <a href="mailto:hello@keziyah.com">
                                     <i className="fa fa-envelope fa-5x" aria-hidden="true"></i>
                                 </a>
+                                <p id="email">hello@keziyah.com</p>
                             </div>
                         </div>
                             

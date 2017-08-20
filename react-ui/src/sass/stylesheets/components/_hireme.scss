@@ -73,6 +73,7 @@
             @media screen and (max-width: 600px) {
                 padding-right: 2rem;   
             }
+
         }
 
         &-icon:last-child {
@@ -96,6 +97,26 @@
 
         img {
             display: none; //hello at keziyah dot com
+        }
+    }
+}
+
+#email {
+    visibility: hidden;
+    margin: 0; 
+    position: relative; 
+    right: 2.3rem;  
+    
+    @media screen and (max-width: 600px) {
+        right: 1rem; 
+    }
+}
+
+#email-icon {
+    &:hover {
+        #email {
+            animation: fade 1s ease-out; 
+            visibility: visible; 
         }
     }
 }

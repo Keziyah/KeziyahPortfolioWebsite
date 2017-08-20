@@ -1111,6 +1111,19 @@ button {
   .hireme__hello img {
     display: none; }
 
+#email {
+  visibility: hidden;
+  margin: 0;
+  position: relative;
+  right: 2.3rem; }
+  @media screen and (max-width: 600px) {
+    #email {
+      right: 1rem; } }
+
+#email-icon:hover #email {
+  animation: fade 1s ease-out;
+  visibility: visible; }
+
 .video-container {
   position: relative;
   bottom: 0%;
