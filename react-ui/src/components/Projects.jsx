@@ -24,41 +24,64 @@ const Projects = () => {
             </div>
 
             <div className="projects__links">  
-                <Link to="/spacechat">
-                    <div className="spacechat project-div">
-                        <div className="spacechat-logo project-logo"><img src="spacechatlogo.png" alt="spacechat logo"/></div>
-                        <div className="spacechat-info project-info">
-                            <p>Express | Socket.io | React | WebVR</p>
+                {/* <div className="projects-row"> */}
+                    <Link to="/spacechat">
+                        <div className="spacechat project-div">
+                            <div className="spacechat-logo project-logo"><img src="spacechatlogo.png" alt="spacechat logo"/></div>
+                            <div className="spacechat-info project-info">
+                                <p>Express | Socket.io | React | WebVR</p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
 
-                <Link to="/lingoly">
-                    <div className="lingoly project-div">
-                        <div className="lingoly-logo project-logo"><img src="lingolylogo.png" alt="lingoly logo" /></div>
-                        <div className="spacechat-info project-info">
-                            <p>Web Speech API | React | Redux</p>
+                    <Link to="/lingoly">
+                        <div className="lingoly project-div">
+                            <div className="lingoly-logo project-logo"><img src="lingolylogo.png" alt="lingoly logo" /></div>
+                            <div className="spacechat-info project-info">
+                                <p>Web Speech API | React | Redux</p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
 
-                <Link to="/covfefe">
-                    <div className="covfefe project-div">
-                        <div className="covfefe-logo project-logo"><img src="covfefe.png" alt="covfefe letter logo" /></div>
-                        <div className="spacechat-info project-info">
-                            <p>IBM Watson | JavaScript</p>
+                    <Link to="/covfefe">
+                        <div className="covfefe project-div">
+                            <div className="covfefe-logo project-logo"><img src="covfefe.png" alt="covfefe letter logo" /></div>
+                            <div className="spacechat-info project-info">
+                                <p>IBM Watson | JavaScript</p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
+                {/* </div>  */}
 
-                {/* <Link to="/life">
+                <Link to="/life">
                     <div className="life project-div">
                         <div className="life-logo project-logo"><img src="life.png" alt="life solutions counseling logo" /></div>
                         <div className="spacechat-info project-info">
-                            <p>Design</p>
+                            <p>Design | HTML | CSS</p>
                         </div>
                     </div>
-                </Link> */}
+                </Link>
+
+                <Link to="/bladress">
+                    <div className="bladress project-div">
+                        <div className="bladress-logo project-logo"><img src="bladress.png" alt="the bladress logo" /></div>
+                        <div className="spacechat-info project-info">
+                            <p>Design | HTML | CSS | Wordpress</p>
+                        </div>
+                    </div>
+                </Link>
+
+                {/* <Link to="/kursor"> */}
+                    <div className="kursor project-div">
+                        <div className="kursor-logo project-logo"><img src="kursor.png" alt="kursor logo" /></div>
+                        <div className="spacechat-info project-info">
+                            <p>React Native | Electron | UI Design</p>
+                            <p>Journal. Better.</p>
+                            <p>Coming soon to an app store near you</p>
+                        </div>
+                    </div>
+                {/* </Link> */}
+
             </div> 
         </div>
     )

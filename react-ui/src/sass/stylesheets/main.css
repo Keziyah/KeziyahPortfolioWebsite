@@ -939,10 +939,16 @@ button {
 .projects__links {
   display: flex;
   flex-direction: row;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
   @media screen and (max-width: 950px) {
     .projects__links {
       flex-wrap: wrap; } }
+
+.projects .projects-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
 
 .projects .project-div {
   display: flex;
@@ -993,6 +999,12 @@ button {
 
 .projects .life {
   background-color: #467988; }
+
+.projects .bladress {
+  background-color: #F26B98; }
+
+.projects .kursor {
+  background-color: #EF9B0F; }
 
 .section-title {
   align-self: flex-start;

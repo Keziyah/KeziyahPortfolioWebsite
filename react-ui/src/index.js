@@ -11,7 +11,8 @@ import registerServiceWorker from './registerServiceWorker'
 import Spacechat from './components/Spacechat'
 import Lingoly from './components/Lingoly'
 import Covfefe from './components/Covfefe'
-// import Life from './components/Life'
+import Life from './components/Life'
+import Bladress from './components/Bladress'
 import NoMatch from './components/NoMatch'
 import MyStory from './components/MyStory'
 
@@ -41,8 +42,9 @@ ReactDOM.render(
                     <Route path="/lingoly" component={Lingoly} />
                     <Route path="/covfefe" component={Covfefe} /> 
                     <Route path="/story" component={MyStory} />
+                    <Route path="/life" component={Life} />
+                    <Route path="/bladress" component={Bladress} />
                     <Route component={NoMatch} />
-                {/* <Route exact path="/life" component={Life} /> */}
                 </Switch>
             </div>
         </Router>

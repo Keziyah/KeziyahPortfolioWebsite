@@ -18,10 +18,17 @@
         display: flex; 
         flex-direction: row; 
         width: 100%;
+        flex-wrap: wrap;
         
         @media screen and (max-width: 950px) {
             flex-wrap: wrap; 
         }
+    }
+
+    .projects-row {
+        display: flex; 
+        flex-direction: row; 
+        width: 100%; 
     }
 
     .project-div {
@@ -96,6 +103,14 @@
 
     .life {
         background-color: #467988; 
+    }
+
+    .bladress {
+        background-color: #F26B98; 
+    }
+
+    .kursor {
+        background-color: #EF9B0F; 
     }
 }
 

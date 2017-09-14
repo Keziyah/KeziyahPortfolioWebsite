@@ -1,28 +1,26 @@
 import React from 'react'
 import CaseHeader from './CaseHeader'
 
-const Life = () => {
+const Bladress = () => {
     window.scrollTo(0, 0)
     return (
         <div className="life case-study">
            <CaseHeader />
 
             <div className="project-hero">
-                <h1>Life Solutions Counseling</h1>
-                <h5>Design | HTML | CSS | Wireframes using Sketch</h5>
-                <h4>A redesign for a counseling service’s website. 
+                <h1>The Bladress</h1>
+                <h5>Design | HTML | CSS | Wordpress | Wireframes using Sketch</h5>
+                <h4>A website redesign for a badass female long distance rollerblader.  
                 </h4>
             </div>
 
             <div className="project-body">
                 <p>
-                    Life Solutions Counseling is a mental health counseling practice in Kissimmee, Florida. The old version of the site was made with a Wix template, and had an outdated look. I wanted to give the website a
-                    hand crafted, modern, positive, and professional look that would encourage site visitors to contact the practice
-                    for services.      
+                The Bladress aims to set the Guinness World Record for the longest journey on inline skates, while raising money for girls' education, during an 8 month tour in Europe. She needed a well designed, interactive website that would encourage others to support her journey and the cause.       
                 </p>
 
                 <div className="project-body__image">
-                    <img src="lscmockup.png" alt="mockup of life solutions counseling homepage on desktop"/>
+                    <img src="blademockup.png" alt="mockup of the bladress homepage on desktop"/>
                 </div>
 
                 <p>
@@ -46,4 +44,4 @@ const Life = () => {
     )
 }
 
-export default Life
+export default Bladress
