@@ -10,7 +10,7 @@ const Life = () => {
             <div className="project-hero">
                 <h1>Life Solutions Counseling</h1>
                 <h5>Design | HTML | CSS | Wireframes using Sketch</h5>
-                <h4>A redesign for a counseling service’s website. 
+                <h4>A redesign for a counseling service’s landing page. 
                 </h4>
             </div>
 
@@ -22,11 +22,15 @@ const Life = () => {
                 </p>
 
                 <div className="project-body__image">
-                    <img src="lscmockup.png" alt="mockup of life solutions counseling homepage on desktop"/>
+                    <img src="lsc-mockup.png" alt="mockup of life solutions counseling homepage on desktop"/>
                 </div>
 
                 <p>
-                    This redesign is currently in progress, and will be live by the end of September 2017. 
+                    The result is a simple, yet effective landing page. I aimed to make the visual design convey trust and clarity, while providing necessary information about LSC's services to prospective clients. After completing the design with Sketch, I developed the mobile-responsive website using modern frontend tools such as SCSS and Gulp. 
+                </p>
+
+                <p>
+                    You can view the project <a href="/lsc" target="_blank" rel="noopener noreferrer">here</a>. 
                 </p>
             </div>
 
@@ -34,11 +38,17 @@ const Life = () => {
 
                 <div className="project__links">
 
-                            {/* <div className="project__links-icon">
-                                <a href="https://github.com/keziyah/lingoly" target="_blank">
+                            <div className="project__links-icon">
+                                <a href="https://github.com/keziyah/lifesolutionscounseling" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-github fa-5x" aria-hidden="true"></i>
                                 </a>
-                            </div> */}
+                            </div>
+
+                            <div className="project__links-icon">
+                                <a href="/lsc" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-link fa-5x" aria-hidden="true"></i>
+                                </a>
+                            </div>
                 </div>
             </div>
             <footer> &copy; Keziyah Lewis 2017.</footer>
