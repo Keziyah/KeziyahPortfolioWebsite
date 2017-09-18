@@ -40,6 +40,10 @@ const Lingoly = () => {
                     students to save their speeches.  
                 </p>
 
+                <p>
+                    See the links below for the GitHub repo, or view a video presentation on how Lingoly works. 
+                </p>
+
             </div>
 
             <div className="project-end">

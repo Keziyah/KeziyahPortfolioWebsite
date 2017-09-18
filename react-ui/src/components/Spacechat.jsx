@@ -50,6 +50,11 @@ const Spacechat = () => {
                     <div className="project-body__image">
                         <img src="spacechatScreens2.png" alt="mockups of knots world in spacechat"/>
                     </div>
+
+                <p>
+                    See the links below for the GitHub repo, or view a video presentation on how Spacechat works. 
+                </p>
+
             </div>
 
             <div className="project-end">
