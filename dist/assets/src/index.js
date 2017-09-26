@@ -1,4 +1,4 @@
-$( window ).on('load', function() {
+$(document).ready(function() {
 
 //********** Header scroll stuff ****************//
 var didScroll;
@@ -103,10 +103,7 @@ $('a[href*="#"]')
   }
 });
 
-});
-
-$(document).ready(function() {
-	//Google Maps JS   https://codepen.io/hubpork/pen/xriIz 
+//Google Maps JS   https://codepen.io/hubpork/pen/xriIz 
 	//Set Map
 	function initialize() {
 		var myLatlng = new google.maps.LatLng(28.306171,-81.439076);
@@ -150,6 +147,6 @@ $(document).ready(function() {
 		map.setCenter(center);
 	});
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
-})
+});
+
