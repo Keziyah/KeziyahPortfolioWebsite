@@ -760,6 +760,9 @@ button {
   @media screen and (max-width: 600px) {
     .hero__greeting {
       width: 85%; } }
+  @media screen and (max-width: 350px) {
+    .hero__greeting {
+      width: 95%; } }
   @media screen and (max-height: 400px) {
     .hero__greeting {
       padding-top: 2%; } }
