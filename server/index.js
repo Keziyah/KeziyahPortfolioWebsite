@@ -11,6 +11,7 @@ app.use(morgan('dev'));
 
 //When the user requests /lsc, serve the static files in the dist folder. No need to write middleware to serve corresponding assets, since they are linked in the html. 
 app.use('/lsc', express.static(path.join(__dirname, '../dist')))
+app.use('/bladestage', express.static(path.join(__dirname, '../bladressDist')))
 
 //Otherwise, serve static files from the react build. 
 app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
