@@ -9,7 +9,7 @@ const Bladress = () => {
 
             <div className="project-hero">
                 <h1>The Bladress</h1>
-                <h5>Design | HTML | CSS | Wordpress | Wireframes using Sketch</h5>
+                <h5>Design | HTML | CSS | jQuery | Wordpress | Wireframes using Sketch</h5>
                 <h4>A website redesign for a badass female long distance rollerblader.  
                 </h4>
             </div>
@@ -20,23 +20,34 @@ const Bladress = () => {
                 </p>
 
                 <div className="project-body__image">
-                    <img src="blademockup.png" alt="mockup of the bladress homepage on desktop"/>
+                    <img src="bladehero.png" alt="mockup of the bladress homepage"/>
                 </div>
 
                 <p>
-                    This redesign is currently in progress, and will be live by the end of September 2017. 
+                      The Bladress is all about female empowerment. Femininity and strength, two things that are not mutually exclusive, heavily influenced my design process, including my choice of fonts and colors.  
                 </p>
+
+                <div className="project-body__image">
+                    <img src="bladeabout.png" alt="mockup of the bladress homepage"/>
+                </div>
+
+                <div className="project-body__image">
+                    <img src="bladedonate.png" alt="mockup of the bladress homepage"/>
+                </div>
+
+                <p>
+                      The website was designed in Sketch, developed using modern frontend tools like Gulp and SCSS, and uses WordPress as a CMS.  
+                </p>
+
+                <div className="project-body__image">
+                    <img src="blademap.png" alt="mockup of the bladress homepage"/>
+                </div>
+
             </div>
 
             <div className="project-end">
 
                 <div className="project__links">
-
-                            {/* <div className="project__links-icon">
-                                <a href="https://github.com/keziyah/lingoly" target="_blank">
-                                    <i className="fa fa-github fa-5x" aria-hidden="true"></i>
-                                </a>
-                            </div> */}
                 </div>
             </div>
             <footer> &copy; Keziyah Lewis 2017.</footer>

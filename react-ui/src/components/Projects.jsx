@@ -57,7 +57,7 @@ const Projects = () => {
                     <div className="life project-div">
                         <div className="life-logo project-logo"><img src="life.png" alt="life solutions counseling logo" /></div>
                         <div className="spacechat-info project-info">
-                            <p>Design | HTML | CSS</p>
+                            <p>Design | Frontend</p>
                         </div>
                     </div>
                 </Link>
@@ -66,7 +66,7 @@ const Projects = () => {
                     <div className="bladress project-div">
                         <div className="bladress-logo project-logo"><img src="bladress.png" alt="the bladress logo" /></div>
                         <div className="spacechat-info project-info">
-                            <p>Design | HTML | CSS | Wordpress</p>
+                            <p>Design | Frontend | Wordpress</p>
                         </div>
                     </div>
                 </Link>
