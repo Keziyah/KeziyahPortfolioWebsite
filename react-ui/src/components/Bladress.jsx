@@ -36,7 +36,7 @@ const Bladress = () => {
                 </div>
 
                 <p>
-                      The website was designed in Sketch, developed using modern frontend tools like Gulp and SCSS, and uses WordPress as a CMS.  
+                      The website was designed in Sketch, developed using modern frontend tools like Gulp and SCSS, and uses WordPress as a CMS. You can view the project <a href="http://thebladress.com" target="_blank" rel="noopener noreferrer">here</a>.  
                 </p>
 
                 <div className="project-body__image">
@@ -48,6 +48,11 @@ const Bladress = () => {
             <div className="project-end">
 
                 <div className="project__links">
+                    <div className="project__links-icon">
+                        <a href="http://thebladress.com" target="_blank" rel="noopener noreferrer">
+                            <i className="fa fa-link fa-5x" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <footer> &copy; Keziyah Lewis 2017.</footer>
