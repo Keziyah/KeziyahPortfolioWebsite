@@ -77,7 +77,7 @@ const Projects = () => {
                         <div className="spacechat-info project-info">
                             <p>React Native | Electron | UI Design</p>
                             <p>Journal. Better.</p>
-                            <p>Coming soon to an app store near you</p>
+                            <p>Coming soon</p>
                         </div>
                     </div>
                 {/* </Link> */}
