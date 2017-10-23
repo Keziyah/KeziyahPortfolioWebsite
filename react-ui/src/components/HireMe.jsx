@@ -33,7 +33,7 @@ const HireMe = (props) => {
 
             {/* <ScrollAnimation animateIn="slideInUp"> */}
                 <div className="hireme__job">
-                    <h3>If you have an interesting project, a full time<br/> engineering role (NYC, DC, or remote), or <br/> just want to connect, feel free to say hello.</h3>
+                    <h3>If you have an interesting project, a full time<br/> engineering role (NYC, DC, SF, or remote), or <br/> just want to connect, feel free to say hello.</h3>
                 </div>
             {/* </ScrollAnimation> */}
 
