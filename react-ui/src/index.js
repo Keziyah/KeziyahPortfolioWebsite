@@ -13,6 +13,7 @@ import Lingoly from './components/Lingoly'
 import Covfefe from './components/Covfefe'
 import Life from './components/Life'
 import Bladress from './components/Bladress'
+import Kursor from './components/Kursor'
 import NoMatch from './components/NoMatch'
 import MyStory from './components/MyStory'
 
@@ -44,6 +45,7 @@ ReactDOM.render(
                     <Route path="/story" component={MyStory} />
                     <Route path="/life" component={Life} />
                     <Route path="/bladress" component={Bladress} />
+                    <Route path="/kursor" component={Kursor} />
                     <Route component={NoMatch} />
                 </Switch>
             </div>

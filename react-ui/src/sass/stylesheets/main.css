@@ -1055,9 +1055,6 @@ button {
     .quote-name {
       font-size: 0.7rem; } }
 
-.kursor {
-  cursor: auto !important; }
-
 .hireme__job, .hireme__links, .project-body__image, .project__links {
   display: flex;
   flex-direction: row;

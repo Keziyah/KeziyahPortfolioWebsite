@@ -71,16 +71,15 @@ const Projects = () => {
                     </div>
                 </Link>
 
-                {/* <Link to="/kursor"> */}
+                <Link to="/kursor">
                     <div className="kursor project-div">
                         <div className="kursor-logo project-logo"><img src="kursor.png" alt="kursor logo" /></div>
                         <div className="spacechat-info project-info">
-                            <p>React | Electron | UI Design</p>
+                            <p>React | Redux | Electron | Product Design</p>
                             <p>Journal. Better.</p>
-                            <p>Coming soon</p>
                         </div>
                     </div>
-                {/* </Link> */}
+                </Link>
 
             </div> 
         </div>
